@@ -1,0 +1,43 @@
+version: '3'
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.13.4
+    container_name: elasticsearch_db
+    environment:
+      - bootstrap.memory_lock=true
+      - discovery.type=single-node
+      - "ES_JAVA_OPTS=-Xms2g -Xmx2g"
+      - ELASTIC_PASSWORD=DkIedPPSCb
+      - xpack.security.enabled=true
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    ports:
+      - 9200:9200
+      
+  db:          
+    container_name: rag_db_container
+    image: mysql:5.7
+    ports:
+      - "3308:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root_pass
+      MYSQL_DATABASE: rag_db
+    volumes:
+      - ./services/mysql/init.sql:/docker-entrypoint-initdb.d/init.sql 
+      
+  python-app:
+    build: 
+      context: ./services/app  # Correct path to the build context (where the Dockerfile is)
+      dockerfile: Dockerfile    # Correct Dockerfile path (directly in services/app)
+    container_name: app         
+    depends_on:
+      - elasticsearch
+      - db
+    ports:
+      - "5000:5000"             # Port mapping for Flask (adjust if necessary)
+    volumes:
+      - ./services/app:/app     # Correct volume mapping (assuming the source is in root services/app)
+    working_dir: /app           # Correct working directory inside the container
+    restart: unless-stopped

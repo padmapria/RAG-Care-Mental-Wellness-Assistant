@@ -1,0 +1,287 @@
+question_id,question_title,question,answer_llm,true_ans_llm_ans_relevance,true_ans_llm_ans_relevance,quest_llm_ans_relevance
+0,Do I have too many issues for counseling,"I have so many issues to address. I have a history of sexual abuse, I’m a breast cancer survivor and I am a lifetime insomniac. I have a long history of depression and I’m beginning to have anxiety. I have low self esteem but I’ve been happily married for almost 35 years. I’ve never had counseling about any of this. Do I have too many issues to address in counseling","Absolutely not! Many people have multiple issues that they want and need to address in therapy.  Your therapist will help you prioritize and work through your concerns, addressing underlying issues to improve overall well-being. Therapy can be incredibly powerful for complex situations like yours.  Don't hesitate to seek professional support. 
+",RELEVANT,RELEVANT,RELEVANT
+1,My apartment manager won't let me keep an emotional support dog,"I have been diagnosed with general anxiety and depression by my family doctor. They wrote a prescription for me to have an emotional support dog, I have the paper work, and I gave it to my apartment manager. They said I can't keep the ESD because I'm not disabled. What do you suggest I do","Your doctor wrote a prescription for an Emotional Support Dog (ESD), but your apartment manager won't let you keep it because you're not disabled.  You need legal support, as federal law requires landlords to allow ESAs if they meet specific criteria. Consider consulting with an attorney specializing in housing discrimination or reaching out to HUD for guidance on filing a complaint against your landlord. 
+",PARTLY_RELEVANT,PARTLY_RELEVANT,RELEVANT
+2,I feel like my mother doesn't support me,My mother is combative with me when I say I don't want to talk with her about my depression. She hasn't been supportive of me in the past and she isn't someone that I feel comfortable opening up to. She constantly tries to instigate conversations where she asks me questions that I don't want to or can't answer. I tell her I don't want to talk and she starts arguments with me. How can I get her to understand,"This response is incredibly helpful and provides some great guidance. It touches on several important points:
+
+**Strengths of the responses:**
+
+* **Acknowledging Difficulty:** The responses directly address the difficult situation of needing help with mental health but facing challenging family dynamics. 
+* **Empowering Self-Advocacy:**  They emphasize the importance of self-advocacy and taking steps to communicate needs, even if those conversations are daunting. 
+* **Building Support System:**  The emphasis on building support from trusted adults (other parents, siblings, mentors) is crucial for navigating this challenge. 
+* **Addressing Potential Concerns:** The responses acknowledge that parents might not respond in the way we hope and offer strategies to navigate these possibilities.
+* **Recognizing Progress:** Acknowledging progress made, even small steps, is important for maintaining motivation.  
+
+**Suggestions for further support:**
+
+* **Resources:** Providing links or lists of resources related to mental health (e.g., helplines, online therapy options) would be invaluable for the user. 
+* **Building Coping Skills:** Suggesting activities that help manage anxiety and build resilience could be helpful for the user's emotional well-being (e.g., mindfulness techniques, journaling).
+* **Therapy Options:** If the user is seeking professional support, suggesting therapy options (for themselves or their parents) would be beneficial. 
+
+**Overall:** This response provides a valuable foundation and direction for navigating challenging family dynamics and managing mental health struggles.  It's reassuring to see such thoughtful responses that prioritize self-care, support networks, and building coping strategies.  
+",PARTLY_RELEVANT,PARTLY_RELEVANT,PARTLY_RELEVANT
+3,Why do I feel like I don't belong anywhere,"There are many people willing to lovingly provide me with a home. I have food, clothes, and a university education, but I never feel like I belong. Even when I have a good time with people who are supposed to be close, I feel like I'm just out with friends and I never go home","You feel disconnected despite having material comforts and close relationships because you haven't defined a sense of belonging.  Focusing on discovering what makes you happy and safe can help you connect with yourself and others who share those values. Seek out activities and environments that resonate with your interests to build a life that feels meaningful and fulfilling. Remember, it's okay to take time for self-discovery.  If these feelings persist, consider seeking professional guidance from a therapist. 
+",RELEVANT,RELEVANT,RELEVANT
+4,How can I help my girlfriend,My girlfriend just quit drinking and she became really depressed. She told me that she wants to move. What can I do to help her? I want her to stay,"Your girlfriend is experiencing depression and wants to move, likely as part of her recovery from quitting alcohol.  It's crucial to support her decision-making process by understanding her feelings and desires.  Encourage her to explore the reasons behind her desire to move, perhaps through therapy or reflection time.  Offer your unwavering love and support while respecting her independence. Remember, her well-being is paramount, and ultimately she needs to navigate this journey at her own pace. 
+",PARTLY_RELEVANT,PARTLY_RELEVANT,RELEVANT
+5,Can i learn to be happy alone,I'm dealing with an illness that will never go away and I feel like my life will never change for the better. I feel alone and that i have no one. How can I overcome this pain and learn to be happy alone,"You're feeling overwhelmed with chronic illness and loneliness, which are incredibly difficult emotions.  Finding meaning in your life is key. Start by exploring activities that bring you joy and help you practice self-care, even if it's just for a few minutes each day. Remember that seeking support from others can be beneficial as well as finding healthy ways to cope with stress. 
+",PARTLY_RELEVANT,PARTLY_RELEVANT,PARTLY_RELEVANT
+6,How can I deal with my posttraumatic stress disorder,"I feel angry, anxious, and depressed. The PTSD I suffer is from a past relationship","You're struggling with depression likely stemming from your PTSD related to a past relationship.  It sounds like your feelings of anger, anxiety, and depression are severe enough to affect your daily life. Therapy is recommended as it helps manage these symptoms. Consider seeking help from a trained therapist who specializes in treating PTSD. There are resources available such as Psychology Today or Therapy Den that can guide you to the right specialist. 
+",RELEVANT,RELEVANT,RELEVANT
+7,How do I know if I have depression,"I had a very troubled up bringing and I'm currently dealing with alot right now. I know some people may not think so, but to me its a lot. I feel overwhelmed. Could this be depression? I use to be in therapy as a child. Alll throughout elementry, middle, and high school I had counseling 2-3 times a week. I haven't be in counseling lately though","You have many significant issues, but it's crucial to seek support. Therapy can address these challenges. Prioritizing one issue at a time allows for more focused progress. Your strength in navigating life's complexities is noteworthy.  Don't hesitate to reach out to a therapist for guidance. 
+",PARTLY_RELEVANT,PARTLY_RELEVANT,PARTLY_RELEVANT
+8,How do I make new friends,"In the past year, two of my best and only close friends moved to different states. Now I have nobody to hang out with. I'm always alone, and I honestly haven't hung out with anyone since they left. I'm super lonely. What should I do to make new friends? Because they moved and I have no friends now, I think I'm falling into a depression or something. I just need help","You're feeling lonely and isolated because two close friends moved away, which is causing a significant decline in your social life.  It's important to reconnect with people who are supportive and genuine. Consider joining groups or clubs where you share common interests to meet new people. Remember that it takes time to form meaningful connections. 
+",PARTLY_RELEVANT,PARTLY_RELEVANT,RELEVANT
+10,How do I stop feeling empty,"I don't know how else to explain it. All I can say is that I feel empty, I feel nothing. How do I stop feeling this way","You're feeling empty and numb, which is a common symptom of depression.  It could be a result of losing interest in things you enjoyed or a lack of awareness about the good things in your life.  To address this, try identifying what brings you joy and reconnect with those activities.  Don't hesitate to seek professional help if these feelings persist. 
+",PARTLY_RELEVANT,PARTLY_RELEVANT,RELEVANT
+12,How can I get my husband to listen to my needs and talk to me,"I tried telling my husband I was depressed, and he ignored me. He said ""you're always sad or depressed."" And he picked up his phone and ignored me. I said, ""Please don't exaggerate, that isn't true."" And he said, ""Whatever babe. You just want to be sad."" How can I get through to him so he will take me seriously","Your husband's dismissive attitude indicates he might not understand or acknowledge your depression.  Focus on communicating clearly and assertively your needs while setting boundaries. If needed, seek professional support for yourself (therapy, medication) and explore couples counseling if you feel it could benefit your communication. Remember you deserve to be heard and supported. 
+",PARTLY_RELEVANT,PARTLY_RELEVANT,RELEVANT
+13,How can I best fight the winter blues,Every winter I find myself getting sad because of the weather. How can I fight this,"Your question relates to Seasonal Affective Disorder (SAD), which can cause feelings of sadness during the fall and winter months.  
+
+Here are some potential solutions: 
+
+* **Light Therapy:** Using a light therapy box for 30 minutes each morning can help mimic sunlight and boost your mood.
+* **Therapy:**  A therapist can help you develop coping strategies to manage your symptoms.
+* **Social Connection:** Spending time with friends and engaging in enjoyable activities can increase serotonin levels.
+
+
+ Remember, you are not alone, and seeking professional help is a positive step towards feeling better. 
+",RELEVANT,RELEVANT,RELEVANT
+14,Can I change my feeling of being worthless to everyone,"I'm going through some things with my feelings and myself. I barely sleep and I do nothing but think about how I'm worthless and how I shouldn't be here. I've never tried or contemplated suicide. I've always wanted to fix my issues, but I never get around to it. How can I change my feeling of being worthless to everyone","You're struggling with feelings of worthlessness and are having a hard time functioning.  It's important to reach out for professional help. A therapist can provide support and teach coping mechanisms to challenge negative thoughts and build resilience. Consider reaching out for professional support from a mental health professional. 
+",PARTLY_RELEVANT,PARTLY_RELEVANT,RELEVANT
+15,I'm seriously unhappy with everything in my life but I know I don't have any reason to feel this way,I can't even smile or fake one. I can't feel happiness about anything and I can't show love towards another person not even my girlfriend. I hate myself sometimes. All I see is ugly. I can't get over the loss of a loved one and I'm not close to my family. What can I do,"Your feelings of sadness and lack of happiness are understandable given recent loss and feeling trapped by family obligations.  It sounds like you're struggling with the identity shift from pre-motherhood to motherhood, and this is causing a sense of loss and unhappiness.  Remember that your life isn’t all bad - you have loving family and an amazing life.  Consider therapy or exploring self-care activities to help you rediscover yourself and find joy again. 
+",PARTLY_RELEVANT,PARTLY_RELEVANT,PARTLY_RELEVANT
+16,How can I stop treating people badly,"I feel like I'm so alone. I treat people horribly based on what's going on in my life and don't realize it. It ends up pushing them away, especially the ones I love the most. I have a weird feeling deep down inside, and it won't go away. I feel like I'm collapsing","You're feeling lost and alone, and that's understandable given your recent loss.  It's important to acknowledge these feelings and explore what might be causing them. The lack of connection and happiness you experience could stem from a disconnect with yourself, leading to unhealthy coping mechanisms. Focus on self-care practices like getting outside, enjoying hobbies, and building relationships with people who uplift you. Remember, therapy can also provide valuable tools and guidance in navigating these feelings. 
+",PARTLY_RELEVANT,PARTLY_RELEVANT,PARTLY_RELEVANT
+17,How do depression and PMS symptoms contribute to one another and what can I do about it,"I struggle with depression as well as pretty intense mood swings throughout the month. I experience highs where I feel amazing and energetic and then lows where I lack focus, energy, and generally have a more dark outlook on my life. How can I live a more balanced life","Your mood swings during your cycle (PMS) can be related to depression, and it sounds like you're experiencing both.  Focus on self-care by incorporating exercise, meditation, healthy eating, and good sleep into your routine. If these don't provide relief, consider talking with your doctor about potential underlying hormonal issues or a referral to a therapist for support. Remember to track your mood swings and note any patterns you might notice. 
+",PARTLY_RELEVANT,PARTLY_RELEVANT,PARTLY_RELEVANT
+18,How do I overcome my anxierty and depression,I’m facing severe depression and anxiety and I just feel like I’m going through a lot. This really distracts me and I cant get my mind off the things that are bothering me. How do I overcome this anxierty and depression,"You're struggling with severe depression and anxiety, which makes daily life challenging.  Therapy, combining techniques like meditation and cognitive-behavioral therapy, can help manage these feelings. Addressing potential medical factors, such as hormonal imbalances, can also be beneficial. Remember to reach out for professional help if needed, whether it's through online platforms or in-person sessions with a therapist. You don't have to go through this alone. 
+",PARTLY_RELEVANT,PARTLY_RELEVANT,RELEVANT
+19,My family can't stand me,I am the problem. I make my family argue because of me. My mom has even said it. It's constantly like this. I cause problems. I am worthless. I can't stop crying. Sometimes I have to cry myself to sleep. I can't even leave my room because my family can't stand me,"You're experiencing intense feelings of worthlessness and blame due to your family dynamic.  These feelings are contributing to your depression. It's important to seek professional help from a therapist who can guide you through these difficult emotions and support you in setting healthy boundaries with your family. Remember, you deserve support and understanding, even if it feels challenging to achieve right now. 
+",PARTLY_RELEVANT,PARTLY_RELEVANT,RELEVANT
+20,My family says I have depression,"I'm in my late teens and live with my dad. The only time I go out is for my college classes. Sometimes when I see my friends I want to talk with them, but sometimes I won't want to talk to them for days or even weeks. Sometimes I feel i'm not worth knowing or i'm never going to do anything right. Are they right, am I depressed","It seems like you're trying to understand if what you're experiencing might be depression. You've described some challenging symptoms: 
+
+* **Lack of motivation:** You're not engaging with work as usual.
+* **Loss of interest:**  You're no longer finding enjoyment in things you once did, even with friends and laughter.
+* **Distorted perspective:** The sense that life is pointless.
+
+It's important to remember these symptoms are very common and can be signs of depression, but they're not a diagnosis on their own. 
+
+**What we need to do next:**
+
+1. **Talk it out:**  Your feelings are valid, even if you don't immediately know what they mean.  Talking to someone about how you feel (a trusted friend, family member, or therapist) can help gain clarity.
+2. **Self-care:** Even if you're not feeling ""sad,"" taking care of yourself is crucial during this time: 
+    * **Schedule downtime:** Give yourself permission to rest and recharge. 
+    * **Focus on healthy habits:** Eating nutritious food, staying hydrated, and getting enough sleep can help improve your mood and energy levels. 
+    * **Engage in activities you enjoy (even if briefly):**  Doing something enjoyable for a few minutes can lift your spirits.
+
+3. **Consider professional support:** Talking to a mental health professional is a huge step toward understanding what's going on and finding ways to cope with these feelings.
+
+Remember, you don't have to go through this alone. There are people who care about you and resources available to help you feel better.  
+
+
+**Where to find help:**
+* **National Suicide Prevention Lifeline:** 988
+* **Crisis Text Line:** Text HOME to 741741
+* **The National Alliance on Mental Illness (NAMI):** https://www.nami.org/
+
+You deserve support and hope!  Take that first step today towards feeling better. 
+",RELEVANT,RELEVANT,RELEVANT
+22,How can I get people to listen,"I've never been able to talk with my parents. My parents are in their sixties while I am a teenager. I love both of them but not their personalities. I feel that they do not take me seriously whenever I talk about a serious event in my life. If my dad doesn’t believe me, then my mom goes along with my dad and acts like she doesn’t believe me either. I’m a pansexual, but I can’t trust my own parents. I've fought depression and won; however, stress and anxiety are killing me. I feel that my friends don't listen to me. I know they have their own problems, which I do my best to help with. But they don't always try to help me with mine, when I really need them. I feel as if my childhood has been taken from me. I feel as if I have no one whom I can trust","This is a great start to addressing the OP's needs! Here's a breakdown of what makes this response effective:
+
+**Strengths:**
+
+* **Empathetic Understanding:** The responses acknowledge the OP's feelings of being unheard and unappreciated by their parents. 
+* **Actionable Advice:**  The response provides concrete steps, like scripting conversations with parents and communicating needs to friends, which is helpful for building a plan. 
+* **Emphasis on Support:** It encourages seeking professional help (counseling) when needed, demonstrating care for the OP's well-being.
+* **Hopeful Tone:**  Despite the challenging situation, there is a sense of hope and encouragement that suggests things can improve through communication, support, and self-care.
+
+**Areas for Improvement:**
+
+* **Specificity in Communication:** While the advice about scripting conversations is good, offering specific examples or prompts could be even more helpful. For instance:  ""Instead of 'You never listen,' try 'I feel unheard when I talk about [specific situation]. Can we find a time to talk where you can give me your full attention?'"" 
+* **Exploring Underlying Issues:** The response touches on the importance of trust, but it could be deepened. For example:  ""Understanding why your childhood might feel incomplete is important. Have you had open conversations with other trusted adults (teachers, mentors, etc.) about this feeling?"" This can provide a broader perspective.
+* **Self-Care Tips:**  Encouraging self-care activities alongside seeking support is crucial. Suggesting things like journaling, mindfulness exercises, or even simply taking time to do something enjoyable each day could help the OP cope with stress and anxiety.
+
+
+**Overall:**
+
+The response demonstrates a good understanding of the OP's situation and provides actionable advice. By incorporating more specific examples and exploring deeper aspects of communication and self-care, it can become even more effective in guiding the OP towards a brighter future. 
+",RELEVANT,RELEVANT,PARTLY_RELEVANT
+23,How can I get counseling if my primary care physician won't help,"I suffer from adult ADHD, anxiety disorder, and depression. It has been difficult to find a doctor in my area and my primary physician won't help. I am unemployed and overwhelmed. What would you suggest I do","It's tough dealing with multiple conditions and not having access to proper help.  Here's what I suggest: 
+
+1. **Explore Affordable Options:** Look into low-cost or sliding-scale counseling options, such as Pacific Clinics, Hathaway Sycamore, or your local mental health center.
+2. **Contact Insurance Provider:** If you have insurance, call them to find out if there are in-network counselors available.  You could also check for ""superbill"" services from non-network providers. 
+3. **Consider Online Options:** While not always ideal, online therapy or support groups can offer a sense of community and connection. 
+4. **Seek Resources:** Connect with local organizations that may have funding options or resources to help you access care.  
+
+
+Remember, you are not alone in this journey. Don't give up hope and keep searching for the support you need! 
+",RELEVANT,RELEVANT,RELEVANT
+24,I don't believe in myself anymore,"I was married to a narcissist sociopath for 10 years. During that time I was a general manager. I used to help him financially and in other ways when we were together. But things began to change. He emotionally and sexually drained me. I lost my spirit. I used to be a very happy person but now I am a loner. I left him and moved to another state. Currently, I'm working as a server which makes me believe less in myself. I feel pity for myself a lot but don't know what to do. When I have money problems, he does not help me. He actually enjoys seeing me have a hard time in my life. I need help","You've provided three excellent responses that address different aspects of this person's struggle: 
+
+* **Response 1:** This response focuses on immediate help and actionable steps for addressing depression and feelings of worthlessness. The advice is concrete and encourages seeking support from a therapist or support group.
+* **Response 2:**  This response delves deeper into the underlying causes of low self-esteem, encouraging self-reflection and challenge against negative thought patterns. It emphasizes the importance of building confidence and finding purpose in small ways.
+* **Response 3:** This response acknowledges the severity of suicidal thoughts and urges immediate action for safety and well-being. The emphasis on getting help from qualified professionals is crucial.
+
+
+**What makes these responses effective:**
+
+1. **Empathy & Validation:**  All responses demonstrate understanding and empathy towards the person's feelings without judgment. 
+2. **Practical Advice:** They don’t just provide words of support but also offer tangible steps and resources for action.
+3. **Professional Guidance:** The advice encourages seeking professional help from therapists or mental health services as a foundational step.
+4. **Focus on Action:** Each response emphasizes taking proactive steps to address the situation, rather than simply accepting these negative feelings as inherent traits. 
+
+**Overall:** These responses offer a comprehensive and compassionate approach to helping someone struggling with extreme self-worth issues, highlighting the importance of seeking professional support. 
+
+
+It's important to remember that while providing answers is essential, **encouraging further conversation and open communication with loved ones or professionals** can be incredibly helpful for someone in crisis.  
+",PARTLY_RELEVANT,PARTLY_RELEVANT,RELEVANT
+25,"If I am trying to stop self-harming and I seek help, will I need to be put in an inpatient setting","I have bipolar disorder, paranoid personality disorder, posttraumatic stress disorder, anxiety and obsessive-compulsive disorder. I last self-harmed a week ago. When I am stressed, overwhelmed, hurt, or angry, the urge to self-harm is all I can think of. I am trying to seek help","You're experiencing intense emotional challenges, leading to self-harm urges. While seeking help doesn't necessarily mean inpatient treatment, professional support can be crucial for managing these emotions safely. Dialectical Behavior Therapy (DBT) offers effective tools for coping and long-term recovery from self-harm.  Remember, reaching out is a significant step toward positive change, and you are not alone in this journey. 
+",PARTLY_RELEVANT,PARTLY_RELEVANT,RELEVANT
+26,Why do I feel sad all the time,I just feel sad all the time and I don't like anyone in my family. I feel like they're trying to control me and won't let me grow,"You're feeling sad all the time due to your family dynamics, including feelings of being controlled and unimportant. While these emotions may stem from your experiences with your family, remember that their behavior is likely rooted in personal issues rather than reflection of your worth. Seeking professional help from a therapist can provide guidance and support as you navigate these difficult emotions. 
+",PARTLY_RELEVANT,PARTLY_RELEVANT,RELEVANT
+27,Is it possible that I have depression,"I'm starting to think that I might have depression. The thing is though, I'm not exactly sad. I can joke with my friends and stuff, but I've stopped caring about my work, and I've been starting to think that life is pointless. I really have no clue if I need help, or if I'm just tired or something","It's possible you're experiencing symptoms of depression, but it could also be due to stress and life transitions.  Your feelings of apathy towards work and a sense of life's meaninglessness are concerning.  Talk to a therapist or mental health professional to explore these feelings further and develop coping strategies.  Remember that seeking help is a sign of strength, not weakness. 
+",PARTLY_RELEVANT,PARTLY_RELEVANT,RELEVANT
+28,How can I get over my posttraumatic stress disorder without my parents knowing about it,"I've had posttraumatic stress disorder for years without my parents ever finding out. I want to overcome it, but it’s so vivid, it’s like it’s happening again. I'm scared and paranoid. I have depression, which I have been struggling with since a young age","PTSD is a complex disorder that requires professional help. Cognitive Processing Therapy (CPT) is often effective, and finding a qualified therapist specializing in PTSD is crucial. Remember, you're not alone, and seeking help is a sign of strength. 
+",PARTLY_RELEVANT,PARTLY_RELEVANT,PARTLY_RELEVANT
+29,How can I manage my anxiety,I have twin toddlers. I experienced a death of loved one prior to giving birth. I had a horrible break up with the father. People told him he was using me for money. My ex-boyfriend had extreme meltdowns every day for three years. I’m always alone with no friends,"This is great advice! It looks like the responses address some key points about approaching this situation:
+
+* **Acknowledge Past Experiences:** The answers recognize your history of diagnosis and past self-harm, acknowledging these experiences are important to include. 
+* **Seek Professional Guidance:**  It's highly recommended to talk to a therapist for guidance on how to approach parents. This is crucial in navigating sensitive conversations.
+* **Focus on Your Needs:** Encourage the person to express their own needs and feelings without blaming or expecting others to know exactly what will help them. 
+* **Prioritize Safety:** The answer highlights the importance of safety, especially when dealing with voices, and provides resources for immediate support if needed.  
+
+
+**Here's a breakdown of why these answers are strong:**
+
+1. **Empathy and Validation:** The responses validate your struggles and acknowledge the difficult emotions you might be experiencing. This can help create a foundation for open communication.
+2. **Actionable Steps:** They provide clear steps to consider, such as: 
+    * Contacting past therapists or specialists. 
+    * Preparing for conversations about mental health with parents. 
+    * Utilizing resources like the Crisis Text Line (text HOME to 741741) or the National Suicide Prevention Lifeline (988).  
+
+**Additional Tips:**
+
+* **Self-Compassion:** Remember that you are not alone, and your feelings are valid. It takes courage to ask for help.
+* **Write a List:** If speaking with parents directly feels daunting, creating a concise list of what you need from them can ease the process. 
+* **Safety Plan:**  If you're feeling overwhelmed, make sure to have a safety plan in place. This might include:
+    * Identifying people you trust who can offer support (a teacher, school counselor, trusted friend) 
+    * Having a list of emergency contacts handy.
+
+
+**It’s important to remember that you are the expert on your own life.** If you feel safer talking to someone else first, like a teacher, counselor, or another trusted adult, they may be able to offer guidance and support as well. 
+
+You've got this! You deserve help and support.  
+",RELEVANT,RELEVANT,PARTLY_RELEVANT
+30,How can I cope with depression,"In the last ten months, I've been kicked out, moved around three times, worked many jobs, stopped school to make money, had dad and mom get sick, was cheated on while pregnant, lost my baby, had relationship issues, and was betrayed. I can't get a job. I have no friends. I feel lonely and isolated. I've been dealing with all this by myself","You're experiencing overwhelming depression due to a series of major life events.  Focusing on small things you can control and seeking professional help are crucial steps. Engaging in self-care activities, like exercise or meditation, can also be beneficial for managing your mood. Remember, it's okay to ask for help, prioritize your well-being, and explore activities that bring you joy. 
+",PARTLY_RELEVANT,PARTLY_RELEVANT,RELEVANT
+31,How can I tell If I have depression,"I don't know if I have depression, but I have been very sad. There are nights that I don't sleep. I don't eat all day sometimes, I don't have energy to anything anymore","You're experiencing symptoms of depression that include sadness, sleep disturbances, loss of appetite, and lack of motivation. These are common signs of depression, but they can also be a result of stress or other life challenges.  It is important to talk to a professional about your feelings and explore potential solutions such as therapy or medication. 
+
+Remember, you're not alone and there are resources available to help you feel better. 
+",PARTLY_RELEVANT,PARTLY_RELEVANT,RELEVANT
+32,How can I manage my anxiety and depression so I can feel normal again,My motivation has gone away. It's hard to get out of bed. I really don't know what to do anymore. I'm miserable. My anxiety and depression have taken over my life,"You're experiencing symptoms of depression and anxiety, which are impacting your motivation, energy levels, and overall well-being.  Behavioral activation techniques like walking or tasks can help shift your focus and restore some feelings of accomplishment. Remember, you're not alone in this struggle, and seeking professional support from a therapist is recommended for personalized guidance. 
+",PARTLY_RELEVANT,PARTLY_RELEVANT,RELEVANT
+33,Why do I feel like I will never have a good career/amount to anything financially,"I'm in my early 20s. I've worked since two months after I turned 18. I have “plans.” I could become an electrician, or I could operate heavy machinery. I have goals, but I do nothing to try to meet them because I don't feel I can. I just want a better life for my fiancée and the kids than I did","You're feeling lost and unfocused because you have a  deep desire for a better life, but struggle to take action.  Remember that you are capable of achieving anything you set your mind to, even if it seems difficult. Break down goals into smaller steps and focus on making progress, no matter how small.  Rediscovering yourself is about reconnecting with things you enjoy, not just accomplishments. 
+",PARTLY_RELEVANT,PARTLY_RELEVANT,PARTLY_RELEVANT
+34,Why do I feel like I'm nothing more than a wife and mom,"I'm in my mid 20s with a husband and children. I love my family, but I feel like I've lost my identity, and I don't know who I am other than a mom and wife. At times, all I can think is what I gave up and how I feel unhappy and trapped, but I know I'd feel like worse without them. I loathe myself at times. I have an amazing life, so why can't I just enjoy it","You're experiencing significant emotional turmoil stemming from feeling lost in your identity after transitioning into motherhood.  This shift can lead to negative self-perception and a lack of joy. It sounds like you have an amazing life, but perhaps you haven't fully explored your passions or allowed yourself time for personal growth outside of being a wife and mother. To begin addressing this, try exploring your interests, setting aside some dedicated time for them each week, and communicating with your husband about how you feel.  Remember that it's okay to struggle and seek support during these times. 
+",RELEVANT,RELEVANT,RELEVANT
+36,How can I be less paranoid at night,"I'm currently up paranoid about, well, everything. I can't get to sleep, and I have a feeling of being watched constantly. I have extreme depression and anxiety. I'd really like to not be this paranoid and go to bed. I've tried night lights, ambiance, and warm baths","It sounds like you're struggling with severe paranoia, anxiety, and depression.  Your doctor can help rule out any physical issues that might be contributing to your symptoms. Talking to a counselor or therapist could also be beneficial as they can help explore the root causes of these feelings and offer coping strategies for managing them. Try practicing relaxation techniques like deep breathing exercises or visualization before bed to promote better sleep.  Remember, seeking professional support is crucial for addressing these challenges. 
+",PARTLY_RELEVANT,PARTLY_RELEVANT,PARTLY_RELEVANT
+37,How can I handle my alcoholic son,"I have an alcoholic son who is draining me financially. I want to get him help, but he doesn't want help. It's making me anxious and depressed","It sounds like your situation is incredibly difficult, and it's understandable to feel overwhelmed with anxiety and depression as a result of your son's addiction.  You have limited control over his choices but can establish boundaries on financial support, seek Al-Anon support groups, and consider seeking grief therapy for yourself. Prioritizing self-care is essential in navigating this challenging situation. 
+",RELEVANT,RELEVANT,RELEVANT
+38,Is self-diagnosing okay,"I'm currently struggling with diagnosed depression, anxiety, and Misophonia. Also, I am 99% sure I have Borderline Personality Disorder and Avoidant Personality Disorder. I read the DSM-IV, taken college psychology, etc. I know it in my heart I have them. Is self-diagnosing okay with the right research","While self-diagnosing can be tempting, it's important to remember that accurate diagnoses require professional expertise.  Diagnoses are complex and require observation and gathering of data. Seeking help from a qualified mental health professional is crucial for effective treatment and addressing your needs.  Remember, you don't have to go through this alone! 
+",RELEVANT,RELEVANT,RELEVANT
+39,How do I tell my parents that I think I have some mental problems,I am pretty sure I have depression and anxiety. I also have voices in my head. I have problems sleeping too. I've already been diagnosed with attention-deficit disorder and obsessive-compulsive disorder. I have self-harmed in the last and used to be suicidal. How do I tell them this and ask for therapy,"You are struggling with depression, anxiety, and voices in your head. You've self-harmed in the past and attempted suicide.  It's important to reach out for professional help to manage these feelings. Talking to your parents may be challenging, but seeking therapy is crucial for addressing these challenges. Consider reaching out to a therapist or a trusted adult who can support you during this process. 
+",PARTLY_RELEVANT,PARTLY_RELEVANT,RELEVANT
+40,How do I help my 20 year old boyfriend who says he hates his life,"I think adult life is making him depressed and we often sleep in on weekends untill 1 or 2 pm. We just eat, smoke weed, watch movies, and he'll go on his phone all day. He doesn't seem motivated to do much and he's often angry. I have no clue how to help him take his mind off the negative, or to distract him into a different light. How do I help him","It sounds like you're concerned about your boyfriend's depression.  He seems stuck in a negative cycle of activities and emotions.  **You can help by encouraging him to seek professional help from a therapist.** This is crucial for understanding the root causes of his feelings and developing coping mechanisms. Additionally, **setting healthy boundaries with him,** like spending time apart if he continues to isolate or ignoring you, could be helpful. Remember, you can't ""fix"" him, but you can support him in seeking help and taking steps towards self-improvement. 
+",PARTLY_RELEVANT,PARTLY_RELEVANT,RELEVANT
+41,is it normal not to feel empathy,"I can't seem to feel any emotion except anxiety, not even for myself","You're describing difficulty experiencing empathy and feeling emotions besides anxiety.  It may be related to stress or exhaustion. Try exploring what situations trigger your anxiety and how that relates to potential emotions you might have missed. Even small moments of connection with others, like watching a movie, can help rekindle emotions. Remember to prioritize self-care by engaging in activities that bring joy, even if they seem insignificant initially.  It's normal to feel empty sometimes; it's a sign that something is out of balance. 
+",RELEVANT,RELEVANT,PARTLY_RELEVANT
+42,How can I take care of my depression from a breakup,"I have been falling into a deep depression where I can no function during the day and night. The only time I am at peace is when I’m asleep. If I am with friends, family, at work, and mainly alone, I cannot think straight. I no longer feel like myself","You are experiencing severe depression symptoms like lack of motivation and difficulty functioning.  It's important to acknowledge these feelings and allow yourself time to process this heartbreak. Seek professional help if needed. Remember, you have strengths and capabilities despite what you feel right now. 
+",PARTLY_RELEVANT,PARTLY_RELEVANT,RELEVANT
+43,How do I find out the cause of my depression and anxiety,"I have been feeling more and more down for over a month. I have started having trouble sleeping due to panic attacks, but they are almost never triggered by something that I know of","This is a great start for answering these questions! Here's how you can improve on the content provided:
+
+**Overall Strengths:**
+
+* **Empathy & Validation:** The answers demonstrate empathy by acknowledging the pain of the user and showing genuine understanding. 
+* **Actionable Advice:**  The advice given goes beyond just ""feeling better"" and provides specific, actionable steps that a person struggling with these conditions can try out. 
+* **Practical Tips:** Addressing practical solutions like physical activity (walking) and task-based activities are good examples of how to engage oneself even when motivation is low.
+
+**Areas for Improvement:**
+
+* **Specificity & Detail:**  While the answers provide good general advice, they could benefit from more specific guidance:
+    * **Anxiety Management Techniques:** Offer a few concrete anxiety management techniques like deep breathing exercises, progressive muscle relaxation, or mindfulness meditation. 
+    * **Motivation Boosters:** Instead of just mentioning ""doing things,"" provide some examples of motivation-boosting activities (setting small achievable goals, rewarding oneself for progress, etc.) 
+    * **Depression Management Strategies:**  Give specific examples of how to address depression beyond ""behavioral activation."" Could include:
+        * **Cognitive Behavioral Therapy (CBT):** Briefly explain CBT as a helpful treatment approach.
+        * **Exercise & Sunlight:** Emphasize the positive effects of exercise and sunlight on mood. 
+    * **Medication Management:**  If appropriate, mention the role of medication in managing mental health conditions (but avoid giving medical advice). 
+
+* **Addressing ""Paranoid"" Anxiety:** The answer offers helpful suggestions for addressing paranoia, but here are some additional points that might help:
+    * **Grounding Techniques:** Teach techniques like the 5-4-3-2-1 method (to focus on grounding oneself in the present moment) or using a sensory experience to bring oneself back to reality.  
+    * **Exposure Therapy:** Briefly mention exposure therapy as a way to challenge and reduce fear responses to specific situations, such as practicing going out alone at night for short durations.
+
+**Additional Tips:**
+
+* **Encourage Professional Help:** Emphasize that professional help from a therapist or counselor is strongly recommended. 
+* **Resources & Information:**  Provide links or resources for mental health support (e.g., the National Alliance on Mental Illness - NAMI).
+* **Confidentiality:** Reassure users of confidentiality when discussing their concerns with a professional.
+
+
+**Overall, you are providing great guidance! By adding more specific advice and details, you can create even more helpful answers.** 
+",RELEVANT,RELEVANT,PARTLY_RELEVANT
+44,What can I do about my depression and anxiety after trying so many things,"I have terrible anxiety and depression. I've tried various therapists and pills, but nothing's helped","You've tried various therapies and medications, but nothing seems to be working for your depression and anxiety. It's crucial to continue seeking help, as finding the right therapist and medication combination takes time.  Don't hesitate to communicate with therapists about their approach and if it's not resonating. Consider exploring alternative approaches such as yoga or meditation for stress management. 
+",PARTLY_RELEVANT,PARTLY_RELEVANT,RELEVANT
+45,How can I help my husband after a suicide attempt,"After he got home from the hospital he was angry, then for a time wonderful. Now he is depressed and hopeless again","He's experiencing cyclical depression and hopelessness after his suicide attempt.  His anger and subsequent ""wonderful"" periods are normal responses to trauma. Seek professional help for him immediately as he needs expert support in this delicate stage.  Therapy from a qualified mental health professional can offer the tools needed to navigate his emotions and build coping mechanisms. 
+",RELEVANT,RELEVANT,RELEVANT
+46,How do I get back on my feet while going through a bad divorce,"I am going through a divorce. He is extremely angry. He refuses to physically assist me with our teenager daughter. I have no extended family support. Often times, I feel overwhelmed, tired, and joyless. I feel out of control, sad and depressed on a daily basis. I am just going through the motions of life every day. I am in my mid-50s. I have almost 29 years on my job. How can I handle this","You are experiencing overwhelming sadness, depression, and feelings of helplessness due to the divorce and lack of support. Seeking professional help from a therapist is crucial to develop coping mechanisms and manage your emotions. Additionally, connect with support groups or community counseling centers to share experiences and receive guidance. Remember that you're not alone, and seeking assistance is a sign of strength. 
+",PARTLY_RELEVANT,PARTLY_RELEVANT,RELEVANT
+48,I think my friend might have depression,"She has trouble falling and staying asleep and she's always either extremely hungry or not hungry at all. She also gets angry and feels like crying really easily for no reason. She says she is always ""kind of down."" Is this depression? What can I do to help her","Based on the context, your friend's symptoms (sleep difficulties, appetite changes, anger, crying easily) strongly suggest depression. Offering support, listening without judgment, and encouraging professional help is crucial. If she's resistant, persistent reassurance and understanding may be needed. Remember you can't force her into therapy but you can offer to support her during this challenging time. 
+",RELEVANT,RELEVANT,RELEVANT
+49,Why am I upset or down every day even when nothing is going on,How can I get to a place where I can be content from day to day,"To reach contentment day-to-day, it's crucial to understand what might be causing your low mood.  Consider keeping a daily log of positive experiences and engaging in activities that bring joy. Maintaining healthy habits like eating well and getting enough sleep can also positively impact your emotional state. Reflecting on moments when you felt truly content can offer valuable insights into factors that contribute to well-being. Remember, seeking professional support from a therapist or counselor is always an option if needed. 
+",PARTLY_RELEVANT,PARTLY_RELEVANT,RELEVANT
+50,How can I deal with depression stemming from chronic pain,"I have a severe back problem. I've had 3 major and several minor operations, but I'm still in constant pain. How can I deal with the depression from this chronic pain","Chronic pain can trigger depression, as it disrupts your daily life and sense of control.  Addressing this pain through natural remedies, like physical therapy or lifestyle changes, might offer relief from both the pain and the resulting depression. Seeking professional help is crucial to address underlying emotional challenges related to the chronic pain. Therapy, in conjunction with self-care strategies, can empower you to manage your mental well-being alongside your physical health. Remember, finding what works for you requires patience and persistence, but the journey towards healing is possible. 
+",RELEVANT,RELEVANT,RELEVANT
+51,Why does it feel as if self-harm is an addiction,"I self-harm, and I stop for awhile. Then when I see something sad or depressing, I automatically want to self-harm","Self-harm often feels addictive because it triggers endorphin release, which provides temporary relief from difficult emotions. You might seek help through therapy like DBT or by contacting a mental health crisis hotline for support and guidance. Remember, recovery is possible with the right tools and support.  
+
+**Key takeaways:** 
+
+* Self-harm can feel like an addiction due to its effect on endorphins.
+* Therapy like DBT can be helpful in managing emotions and reducing self-harming urges. 
+* Reach out for help through a mental health crisis hotline or contact a therapist.
+",PARTLY_RELEVANT,PARTLY_RELEVANT,PARTLY_RELEVANT
+52,Why do I crave depression,"It's not entirely true to say I enjoy being sad, but I always find a way to feel that way. I listen to sad music, read tragic stories, and, in a twisted way, like how bad it makes me feel. I focus on negative aspects of my life even if they aren't legitimate or I just make it seem negative","You describe a pattern of seeking out negative content, even when it's not helpful. This suggests you might be avoiding positive emotions or struggling with feelings of sadness, perhaps stemming from difficult life experiences and family dynamics. You also express feeling disconnected from yourself, loved ones, and happiness itself. It may be beneficial to work with a therapist to explore these feelings in a safe and supportive environment.  
+",RELEVANT,RELEVANT,RELEVANT
+53,How can I find myself again,"I just don't know what I want in life anymore. I'm can't figure out what it is that is keeping me distracted and unfocused. I can't put things into perspective at all. I'm just stuck, and I'm disappointed with my lack of accomplishments","You're feeling lost and unfocused, which is common when figuring out your life direction.  Start by understanding your current responsibilities and what brings you joy – a list of both can help re-center your perspective. Remember to prioritize self-care, set boundaries with those who take advantage, and engage in activities that bring you fulfillment. Consider seeking professional support from a therapist if you feel overwhelmed. 
+",PARTLY_RELEVANT,PARTLY_RELEVANT,RELEVANT
+55,Is wishing I wasn't born a sign of something deeper,"I'm not suicidal and wouldn't take my own life, but sometimes, I've wished for an accident to occur and take it. I feel like I just shouldn't be here and wish I wouldn't have been born so I didn't have to go through life. For me, it's a chore, but I don't know if that's normal or a sign of something","You're experiencing feelings of worthlessness and a desire to not be here, which are common in depression.  It's important to remember that these feelings don't define you. Seeking professional help is a positive step towards understanding your experiences and finding ways to move forward. Consider reaching out to a therapist or counselor who can provide support and guidance. 
+",RELEVANT,RELEVANT,RELEVANT
+57,Is there anything I can do about my depression and anxiety,"I have been dealing with depression and anxiety for a number of years. I have been on medication, but lately my depression has felt worse. Can counseling help","Counseling can be beneficial for managing depression and anxiety, but finding the right therapist is crucial.  Look for a counselor with extensive experience and a strong therapeutic approach to ensure a good fit and connection. Remember that building trust and rapport with your therapist is key to successful treatment. 
+
+Additionally, exploring medication options alongside therapy might be helpful.
+",PARTLY_RELEVANT,PARTLY_RELEVANT,PARTLY_RELEVANT
+58,Does my friend have depression,I am really worried about one of my friends because I think he has major depression. He disagrees with me on that. He is shut off when it comes to talking to people and telling them how he really feels. He told me he feels empty inside and the only emotions he feels are anger and sadness. I suggested to him to get help and talk to his mom about it but he refuses,"This is an excellent response! You've provided several important points and resources regarding getting help for someone struggling with depression.  
+
+Here's what I particularly liked: 
+
+**1. Addressing the Question Directly:** You clearly understand the original question (""I'm in my late teens and live with my dad...""). This shows empathy and a realistic understanding of the situation.
+ **2. Emphasis on Family Role as First Responder:**  You rightly point out that family is often the first line of support for someone struggling with mental health issues. 
+**3. Early Intervention's Importance:** You highlight the crucial role of early intervention in managing depression and preventing its escalation.
+**4. Talking to Loved Ones: A Step-by-Step Guide:** Your advice on how to initiate the conversation is clear, compassionate, and actionable.
+**5. Focus on Specific Examples and Concern:**  You emphasize the need for concrete examples and addressing concerns without making diagnoses or jumping to conclusions.
+
+**How can you further improve this response?**
+
+* **Offer resources beyond just talking about mental health treatment:** You could list additional local support groups, hotlines, online forums, or even apps for connecting with others who understand similar struggles. 
+* **Include information on how to recognize the signs of depression in yourself and others.**  This can help people take preventative measures and access help sooner.
+
+
+**Remember:**
+
+* **You are not alone:** There is a wealth of support out there for both those seeking help and those caring for loved ones who need it.
+* **Be patient and persistent:** It may take time for your loved one to be ready to seek professional help, but continue to offer support and let them know you're there for them.
+
+
+By continuing to explore these areas, you can provide even more valuable and insightful information to those struggling with depression or facing similar challenges. 
+",RELEVANT,RELEVANT,PARTLY_RELEVANT
