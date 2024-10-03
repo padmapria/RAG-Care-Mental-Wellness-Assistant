@@ -16,6 +16,14 @@ services:
     ports:
       - 9200:9200
       
+  ollama:
+    image: ollama/ollama
+    container_name: ollama
+    volumes:
+      - ollama_data:/root/.ollama
+    ports:
+      - "${OLLAMA_PORT:-11435}:11434"
+      
   db:          
     container_name: rag_db_container
     image: mysql:5.7
@@ -26,6 +34,18 @@ services:
       MYSQL_DATABASE: rag_db
     volumes:
       - ./services/mysql/init.sql:/docker-entrypoint-initdb.d/init.sql 
+      
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana_data:/var/lib/grafana
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_ADMIN_PASSWORD:-admin}
+    depends_on:
+      - db
       
   python-app:
     build: 
@@ -41,3 +61,7 @@ services:
       - ./services/app:/app     # Correct volume mapping (assuming the source is in root services/app)
     working_dir: /app           # Correct working directory inside the container
     restart: unless-stopped
+
+volumes:
+  grafana_data:
+  ollama_data:

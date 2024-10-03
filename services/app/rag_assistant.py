@@ -189,7 +189,7 @@ def openai_3_5(prompt):
     return response.choices[0].message.content
     
     
-def rag(query, retrieval_search_function_name=minsearch_search, llm_name=llama3,boost = {}):
+def rag(query, retrieval_search_function_name=minsearch_search, llm_name=openai_3_5,boost = {}):
     if(retrieval_search_function_name==minsearch_search):
         search_results = retrieval_search_function_name(query,boost)
     else:

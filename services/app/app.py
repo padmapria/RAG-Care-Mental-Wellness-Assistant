@@ -19,7 +19,7 @@ def say_hello():
     Simple endpoint to return a greeting message.
     """
     logger.info("Received request for /hello endpoint")
-    return jsonify({"message": "Hello, world!"}), 200
+    return jsonify({"message": "Hello!"}), 200
     
 # Endpoint to handle incoming questions
 @app.route('/ask', methods=['POST'])
