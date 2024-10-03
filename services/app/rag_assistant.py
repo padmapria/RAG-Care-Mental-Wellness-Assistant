@@ -189,11 +189,12 @@ def openai_3_5(prompt):
     return response.choices[0].message.content
     
     
-def rag(query, search_function_name=minsearch_search, llm_name=openai_3_5,boost = {}):
-    if(search_function_name==minsearch_search):
-        search_results = search_function_name(query,boost)
+def rag(query, retrieval_search_function_name=minsearch_search, llm_name=llama3,boost = {}):
+    if(retrieval_search_function_name==minsearch_search):
+        search_results = retrieval_search_function_name(query,boost)
     else:
-        search_results = search_function_name(query)
+        #For elasticsearch
+        search_results = retrieval_search_function_name(query)
     prompt = build_prompt(query, search_results)
     answer = llm_name(prompt)
     return answer
@@ -241,9 +242,14 @@ and provide your evaluation in parsable JSON without using code blocks:
 """.strip()
 
 def extract_llm_response_relevance_score(query):
+    ## Generate answer
     answer_llm = rag(query,question_answer_vector_knn, openai_3_5)
+    
+    ## Evaluate the relevance of generated answer
     prompt = Evaluation_template_quest_answer.format(question=query, answer_llm=answer_llm)
     response_relevance_llm = openai_3_5(prompt)
+    
+    ## Cleanup and format the response from LLM
     cleaned_temp = response_relevance_llm.replace('```', '').replace('\n', '').replace('json', '').rstrip(',').strip()
     data = json.loads(cleaned_temp)
     relevance = data.get("Relevance")
