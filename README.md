@@ -12,11 +12,10 @@
 - [RAG Evaluation](#rag-evaluation)
 - [Containerization](#containerization)
 - [FlaskAPI](#flaskapi)
-- [Monitoring](#monitoring)
-- [Reproducibility](#reproducibility)
+- [User Data Collection and Monitoring](#user-data-collection-and-monitoring)
 - [Setup Instructions](#setup-instructions)
 - [Usage](#usage)
-- [CI/CD Pipeline](#ci-cd-pipeline)
+- [CICD Pipeline](#cicd-pipeline)
 
 ### Project Overview
 The **RAG-Care-Mental-Wellness-Assistant** project aims to develop a conversational AI system that provides accessible mental wellness support. By leveraging Retrieval-Augmented Generation (RAG) technology, the assistant allows users to interact with trusted mental health resources effectively.
@@ -41,7 +40,7 @@ Traditional methods of retrieving mental health information can be time-consumin
 ---
 
 ## Section 1: Dataset and Ground Truth Generation  <br/>
-(present in the folder /notebooks/step0_data_preparation.ipynb)  <br/>
+(Notebook is in the folder `/notebooks/step0_data_preparation.ipynb`)  <br/>
  
 ### Knowledge Base
 - **Counsel Chat Dataset**: A comprehensive dataset of mental health-related conversations.
@@ -57,7 +56,7 @@ Traditional methods of retrieving mental health information can be time-consumin
 ---
 
 ## Section 2: RAG Flow and Evaluation   <br/>
-(present in the folder /notebooks/step0_data_preparation.ipynb) <br/>
+(Notebook in the folder `/notebooks/step0_data_preparation.ipynb`) <br/>
 
 Integrates the Counsel Chat Dataset knowledge base and **LLaMA3:8b, OpenAI API, Gemma2:2b models** 
 
@@ -89,10 +88,22 @@ The system evaluates retrieval performance using:
 # Section 3: Interface  <br/>
 ### Containerization
 - The entire system is containerized using **Docker** and managed via **docker-compose** to ensure ease of deployment.
-- The docker compose file is present in the root directory of the project
+- The **docker-compose.yml** file is present in the root directory of the project. It defines services for:
+  - **ElasticSearch**: For indexing and searching the mental health-related data.
+    - The **vectorstore index** are created during the container initialization.
+  - **Grafana**: For monitoring and analytics, with a pre-configured dashboard.
+    - The **Grafana JSON** file is automatically uploaded during container initialization for immediate use.
+  - **Python**: For running the Flask application and RAG logic.
+  - **MySQL**: For database management.
+     - The **SQL Tables** are created during the container initialization.
+- The Docker setup also includes **unit and integration tests** to ensure the functionality and stability of the system:
+  - **Unit tests**: For verifying individual components of the system.
+  - **Integration tests**: For testing the interaction between different components (e.g., Flask, ElasticSearch, etc.).
+  - Tests are automatically triggered during the CI/CD pipeline.
 ---
-(present in the folder /services/app)  <br/>
+
 ### FlaskAPI
+(source code in the folder `/services/app`)  <br/>
 - A web application built with **Flask**,
 - The application provides the following functionalities:
   - Query Processing: Accepts user queries and rewrites them to optimize search results.
@@ -114,12 +125,13 @@ http://localhost:5000/recent_questions
 ---
 
 ### User Data Collection and Monitoring
+(init.sql configuration is located in the folder `/services/mysql`)  <br/>
 - **User feedback collection**: Tracks user interaction and feedback with MySQL.
 ```
 http://localhost:3306
 ```
-
 - **Monitoring dashboard**: Provides insights into system performance and user activity.
+  (dashboard.json  configuration is located in the folder `/services/grafana`)  <br/>
 - The application also integrates Grafana, a  monitoring and visualization tool. Grafana allows users to track performance metrics of the RAG model and the underlying infrastructure, ensuring that the application operates efficiently.
 -  Grafana dashboard can be accessed from :
 
@@ -127,11 +139,28 @@ http://localhost:3306
 http://localhost:3000
 ```
 ---
-### Reproducibility
-- The project ensures reproducibility with clear setup instructions and an accessible dataset.
+### CICD Pipeline
+- **Testing**: Unit and integration test cases are located in the `/services/app/tests` directory. These tests ensure the functionality and reliability of the application.
+- The project utilizes **GitHub Actions** for continuous integration and deployment, ensuring that the system is always up-to-date and functional.
+
+#### GitHub Actions Workflow
+The following GitHub Actions workflow is defined in the `.github/workflows/ci-cd.yml` file:
+
+
+---
+
 ### Setup Instructions
-1. Clone the repository.
-2. Install the required dependencies using `pip install -r requirements.txt`.
+**Note:** OpenAI immediately revokes the API key once it detects that the key has been exposed publicly. Therefore, do not expose your API key.<br/>
+<br/>
+Generate your OpenAI API key here: [Click Here](https://platform.openai.com/account/api-keys)
+
+1. Clone this git repository from command prompt<br/>
+git clone https://github.com/padmapria/RAG-Care-Mental-Wellness-Assistant.git    
+cd RAG-Care-Mental-Wellness-Assistant  
+
+2. Create a `.env` file inside the 'app' folder and in the notebooks folder store the key as follows:     
+OPENAI_API_KEY=YOUR_API_KEY_HERE<br/>
+
 3. Run **Jupyter Notebook (notebooks folder)** for data ingestion and processing, RAG evaluation
 4. Use `docker-compose up` to start the end to end Flask based RAG application
 ```
@@ -146,5 +175,4 @@ docker compose up -d
 
 ---
 
-## CI/CD Pipeline
-- Utilizes **GitHub Actions** for continuous integration and deployment, ensuring that the system is always up-to-date and functional.
+
