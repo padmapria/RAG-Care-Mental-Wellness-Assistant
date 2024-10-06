@@ -52,14 +52,14 @@ jobs:
         run: |
           echo "Waiting for services to be up..."
           for i in {1..10}; do
-            if [[ $(docker-compose ps | grep 'Up') ]]; then
+            if [[ $(docker ps | grep 'Up') ]]; then
               echo "Services are up!"
               break
             fi
             echo "Services are not ready yet. Waiting..."
             sleep 5
           done
-          if [[ ! $(docker-compose ps | grep 'Up') ]]; then
+          if [[ ! $(docker ps | grep 'Up') ]]; then
             echo "Services did not start in time."
             exit 1
           fi
