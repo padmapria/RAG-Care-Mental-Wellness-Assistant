@@ -16,13 +16,13 @@ services:
     ports:
       - 9200:9200
       
-  ollama:
-    image: ollama/ollama
-    container_name: ollama
-    volumes:
-      - ollama_data:/root/.ollama
-    ports:
-      - "${OLLAMA_PORT:-11435}:11434"
+  #ollama:
+    #image: ollama/ollama
+    #container_name: ollama
+    #volumes:
+      #- ollama_data:/root/.ollama
+    #ports:
+      #- "${OLLAMA_PORT:-11435}:11434"
       
   db:          
     container_name: rag_db_container

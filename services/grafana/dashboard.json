@@ -120,7 +120,7 @@
           "editorMode": "code",
           "format": "table",
           "rawQuery": true,
-          "rawSql": "SELECT\n  timestamp AS time,\n  question,\n  answer,\n  relevance\nFROM requests\nORDER BY timestamp DESC\nLIMIT 5",
+          "rawSql": "SELECT\n  timestamp AS time,\n  question,\n  user_question,\n  answer,\n  relevance\nFROM requests\nORDER BY timestamp DESC\nLIMIT 5",
           "refId": "A",
           "sql": {
             "columns": [
