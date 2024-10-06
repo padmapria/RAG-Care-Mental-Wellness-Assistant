@@ -28,6 +28,12 @@ jobs:
           cd services
           pip install -r app/requirements.txt
 
+      # Run tests using run_tests.py
+      - name: Run tests
+        run: |
+          cd services
+          python app/tests/run_tests.py
+
       # Start Docker services using Docker Compose
       - name: Start Docker services
         run: docker-compose up -d  # Start your services in the background
@@ -49,32 +55,8 @@ jobs:
             exit 1
           fi
 
-      # Run tests using run_tests.py
-      - name: Run tests
-        run: |
-          cd services
-          python app/tests/run_tests.py
 
       # Tear down Docker services after tests
       - name: Tear down Docker services
         run: docker-compose down
 
-      # Log in to AWS ECR
-      - name: Log in to Amazon ECR
-        run: |
-          aws ecr get-login-password --region ${{ secrets.AWS_REGION }} | docker login --username AWS --password-stdin ${{ secrets.AWS_ECR_REGISTRY }}
-
-      # Build the Docker image
-      - name: Build Docker image
-        run: docker build -t my-app:latest .
-
-      # Tag and push the Docker image to ECR
-      - name: Push Docker image to ECR
-        run: |
-          docker tag my-app:latest ${{ secrets.AWS_ECR_REGISTRY }}/my-app:latest
-          docker push ${{ secrets.AWS_ECR_REGISTRY }}/my-app:latest
-
-      # Deploy to AWS ECS
-      - name: Deploy to AWS ECS
-        run: |
-          aws ecs update-service --cluster my-cluster --service my-service --force-new-deployment
