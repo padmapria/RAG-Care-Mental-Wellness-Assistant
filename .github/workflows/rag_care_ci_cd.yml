@@ -32,6 +32,11 @@ jobs:
         run: |
           cd services
           python app/tests/run_tests.py
+          
+      # Uninstall requirements to keep the environment clean
+      - name: Uninstall requirements
+        run: 
+          pip uninstall -y -r requirements.txt
 
       # Change directory back to the root before starting Docker services
       - name: Change directory to root
