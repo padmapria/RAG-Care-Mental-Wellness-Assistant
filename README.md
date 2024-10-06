@@ -124,18 +124,20 @@ The system evaluates retrieval performance using:
 
 ### User Data Collection and Monitoring
 *(Init.sql configuration is located in the folder `/services/app/mysql`)*  
+[mysql](https://github.com/padmapria/RAG-Care-Mental-Wellness-Assistant/blob/master/services/app/mysql) 
 - **User Feedback Collection**: Tracks user interaction and feedback with MySQL.
     - MySQL Access: `http://localhost:3306`
       <br/>
 - **Monitoring Dashboard**: Provides insights into system performance and user activity.
-  - *(Dashboard.json configuration is located in the folder `/services/app/grafana`)*  
+  - *(Dashboard.json configuration is located in the folder `/services/app/grafana`)*
+  - [grafana](https://github.com/padmapria/RAG-Care-Mental-Wellness-Assistant/blob/master/services/app/grafana) 
 - The application also integrates **Grafana**, a monitoring and visualization tool. Grafana allows users to track performance metrics of the RAG model and the underlying infrastructure, ensuring that the application operates efficiently.
   - Grafana dashboard can be accessed from:
     - `http://localhost:3000`
 ---
 
 # Section 4: Testing and Cloud Deployment  <br/>
-- **Testing**: Unit and integration test cases are located in the `/services/app/tests` [app](https://github.com/padmapria/RAG-Care-Mental-Wellness-Assistant/blob/master/services/app/tests) directory. These tests ensure the functionality and reliability of the application.
+- **Testing**: Unit and integration test cases are located in the `/services/app/tests` [tests](https://github.com/padmapria/RAG-Care-Mental-Wellness-Assistant/blob/master/services/app/tests) directory. These tests ensure the functionality and reliability of the application.
 
 #### GitHub Actions Workflow
 The following GitHub Actions workflow is defined in the `.github/workflows/ci-cd.yml` file: [GitHub Actions Workflow: CI/CD Pipeline](https://github.com/padmapria/RAG-Care-Mental-Wellness-Assistant/blob/master/.github/workflows/rag_care_ci_cd.yml)
