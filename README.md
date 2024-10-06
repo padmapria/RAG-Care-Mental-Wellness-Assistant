@@ -41,6 +41,7 @@ Traditional methods of retrieving mental health information can be time-consumin
 
 ## Section 1: Dataset and Ground Truth Generation  <br/>
 (Notebook is in the folder `/notebooks/step0_data_preparation.ipynb`)  <br/>
+[Data Preparation Notebook: Step 0](https://github.com/padmapria/RAG-Care-Mental-Wellness-Assistant/blob/master/notebooks/step0_data_preparation.ipynb)
  
 ### Knowledge Base
 - **Counsel Chat Dataset**: A comprehensive dataset of mental health-related conversations.
@@ -56,7 +57,8 @@ Traditional methods of retrieving mental health information can be time-consumin
 ---
 
 ## Section 2: RAG Flow and Evaluation   <br/>
-(Notebook in the folder `/notebooks/step0_data_preparation.ipynb`) <br/>
+(Notebook in the folder `/notebooks/step1_data_preparation.ipynb`) <br/>
+[RAG Test Notebook: Step 1](https://github.com/padmapria/RAG-Care-Mental-Wellness-Assistant/blob/master/notebooks/step1_rag_test.ipynb)
 
 Integrates the Counsel Chat Dataset knowledge base and **LLaMA3:8b, OpenAI API, Gemma2:2b models** 
 
