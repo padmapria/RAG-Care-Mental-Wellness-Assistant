@@ -78,7 +78,7 @@ The system evaluates retrieval performance using:
 
 ### User query rewriting 
 - The user queries are rewritten with openAI 3.5 turbo API
-- 
+  
 ### RAG Evaluation
 - The RAG flow is evaluated using **Gemma2** and **OpenAI** as LLM judges for:
 - Relvevence of LLM generated answer against true answer
@@ -94,8 +94,9 @@ The system evaluates retrieval performance using:
   - **Grafana**: For monitoring and analytics, with a pre-configured dashboard.
     - The **Grafana JSON** file is automatically uploaded during container initialization for immediate use.
   - **Python**: For running the Flask application and RAG logic.
-  - **MySQL**: For database management.
+  - **MySQL**: For user interaction data management.
      - The **SQL Tables** are created during the container initialization.
+  <br/>
 - The Docker setup also includes **unit and integration tests** to ensure the functionality and stability of the system:
   - **Unit tests**: For verifying individual components of the system.
   - **Integration tests**: For testing the interaction between different components (e.g., Flask, ElasticSearch, etc.).
@@ -103,48 +104,89 @@ The system evaluates retrieval performance using:
 ---
 
 ### FlaskAPI
-(source code in the folder `/services/app`)  <br/>
-- A web application built with **Flask**,
+*(Source code in the folder `/services/app`)*  
+- A web application built with **Flask**.
 - The application provides the following functionalities:
-  - Query Processing: Accepts user queries and rewrites them to optimize search results.
-  - Vector Store Search: Searches the vector store to retrieve relevant answers.
-  - LLM Integration: Utilizes two Large Language Models (LLMs):
-  - Generator LLM: Retrieves answers from the vector store.
-  - Evaluator LLM: Calculates the effectiveness of the retrieved answer and provides relevance explanations using OpenAI LLM.
-```
-http://localhost:5000/ask
-```
-  - Feedback Processing: Accepts feedback for every query
-```
-http://localhost:5000/feedback
-```
-  - Listing the recent question: Shows the last 5 questions from the user
-```
-http://localhost:5000/recent_questions
-```
+  - **Query Processing**: Accepts user queries and rewrites them to optimize search results.
+  - **Vector Store Search**: Searches the vector store to retrieve relevant answers.
+  - **LLM Integration**: Utilizes two Large Language Models (LLMs):
+    - **Generator LLM**: Retrieves answers from the vector store.
+    - **Evaluator LLM**: Calculates the effectiveness of the retrieved answer and provides relevance explanations using OpenAI LLM.
+      - Endpoint: `http://localhost:5000/ask`
+  - **Feedback Processing**: Accepts feedback for every query.
+      - Endpoint: `http://localhost:5000/feedback`
+  - **Listing Recent Questions**: Shows the last 5 questions from the user.
+      - Endpoint: `http://localhost:5000/recent_questions`
 ---
 
 ### User Data Collection and Monitoring
-(init.sql configuration is located in the folder `/services/mysql`)  <br/>
-- **User feedback collection**: Tracks user interaction and feedback with MySQL.
-```
-http://localhost:3306
-```
-- **Monitoring dashboard**: Provides insights into system performance and user activity.
-  (dashboard.json  configuration is located in the folder `/services/grafana`)  <br/>
-- The application also integrates Grafana, a  monitoring and visualization tool. Grafana allows users to track performance metrics of the RAG model and the underlying infrastructure, ensuring that the application operates efficiently.
--  Grafana dashboard can be accessed from :
-
-```
-http://localhost:3000
-```
+*(Init.sql configuration is located in the folder `/services/mysql`)*  
+- **User Feedback Collection**: Tracks user interaction and feedback with MySQL.
+    - MySQL Access: `http://localhost:3306`
+      <br/>
+- **Monitoring Dashboard**: Provides insights into system performance and user activity.
+  - *(Dashboard.json configuration is located in the folder `/services/grafana`)*  
+- The application also integrates **Grafana**, a monitoring and visualization tool. Grafana allows users to track performance metrics of the RAG model and the underlying infrastructure, ensuring that the application operates efficiently.
+  - Grafana dashboard can be accessed from:
+    - `http://localhost:3000`
 ---
+
 ### CICD Pipeline
 - **Testing**: Unit and integration test cases are located in the `/services/app/tests` directory. These tests ensure the functionality and reliability of the application.
-- The project utilizes **GitHub Actions** for continuous integration and deployment, ensuring that the system is always up-to-date and functional.
 
 #### GitHub Actions Workflow
 The following GitHub Actions workflow is defined in the `.github/workflows/ci-cd.yml` file:
+- Every GitHub push triggers the CI/CD pipeline.
+
+#### CI/CD Pipeline Overview
+
+Our project utilizes a robust CI/CD pipeline to ensure continuous integration and deployment. This process is managed using **GitHub Actions** and is triggered by every push to the `master` branch as well as pull requests targeting the `master` branch.
+
+##### Pipeline Steps
+
+1. **Triggering the Pipeline**: 
+   - The CI/CD pipeline is initiated on every push or pull request to the `master` branch to ensure that all changes are validated before merging.
+
+2. **Checkout Code**: 
+   - The pipeline checks out the latest code from the repository, allowing access to the current version for the workflow.
+
+3. **Set Up Python Environment**: 
+   - A Python environment is set up using the specified version (e.g., `3.8`) to ensure compatibility with the project.
+
+4. **Install Dependencies**: 
+   - All required Python packages are installed using the `requirements.txt` file, ensuring that the necessary dependencies are available for the application.
+
+5. **Run Tests**: 
+   - The pipeline runs unit and integration tests located in the `/services/app/tests` directory. This validates the functionality and reliability of the application.
+
+6. **Change Directory Back to Root**: 
+   - The workflow changes back to the root directory to prepare for subsequent Docker operations.
+
+7. **Uninstall Requirements**: 
+   - Dependencies are uninstalled to maintain a clean environment, preventing conflicts in future builds.
+
+8. **Start Docker Services**: 
+   - The pipeline starts the Docker services defined in the `docker-compose.yml` file, which includes the application, MySQL, ElasticSearch, and Grafana.
+
+9. **Check Services Status**: 
+   - The workflow checks if the services are up and running. It waits for a maximum of 10 attempts (with a 5-second interval) to confirm the services are operational.
+
+10. **Tear Down Docker Services**: 
+    - After the tests are completed, the workflow tears down the Docker services to free up resources.
+
+11. **Log in to AWS ECR**: 
+    - The pipeline logs into Amazon Elastic Container Registry (ECR) using AWS CLI, allowing the subsequent push of the Docker image.
+
+12. **Build Docker Image**: 
+    - A Docker image for the application is built, containing the latest code and dependencies.
+
+13. **Tag and Push Docker Image to ECR**: 
+    - The newly built Docker image is tagged with the ECR registry URL and pushed to ECR for deployment.
+
+14. **Deploy to AWS ECS**: 
+    - Finally, the updated application is deployed to AWS Elastic Container Service (ECS), ensuring the latest version is running in the cloud.
+
+This automated CI/CD pipeline enhances the reliability and speed of our development process by continuously integrating and deploying code changes.
 
 
 ---
