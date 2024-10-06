@@ -16,7 +16,6 @@ model = SentenceTransformer("multi-qa-MiniLM-L6-cos-v1")
 
 # Prepare data
 def prepare_data():
-    print('preparing_data');
     df = pd.read_csv('Mental_wellness_data.csv')
     documents = df.to_dict(orient='records')
     return documents
@@ -36,7 +35,6 @@ def connect_to_es():
     raise Exception("Failed to connect to Elasticsearch after several retries")
 
 
-    
 
 index_settings = {
     "settings": {
@@ -93,9 +91,7 @@ def create_embeddings_index(es_client,index_name, filtered_documents):
 
     for doc in tqdm(documents):
         es_client.index(index=index_name, document=doc)
-
-
-
+        
 
 # Main entry point for the assistant
 if __name__ == '__main__':

@@ -1,3 +1,4 @@
+#app/rag_assistant.py
 import os,re,openai
 from dotenv import load_dotenv
 import pandas as pd
@@ -114,7 +115,6 @@ def elastic_search_knn_combined(vector):
         result_docs.append(hit['_source'])
 
     return result_docs
-
 
 def question_answer_vector_knn_combined(question):
     v_q = model.encode(question)
@@ -241,13 +241,39 @@ and provide your evaluation in parsable JSON without using code blocks:
 }}
 """.strip()
 
-def extract_llm_response_relevance_score(query):
+QUERY_REWRITE_TEMPLATE = """
+You are an expert query rewriter. Your task is to simplify and rephrase the given query 
+to make it concise and clear.
+
+Here is the original query:
+
+{query}
+
+Rewrite the query to minimize ambiguity and maximize clarity, 
+while preserving its original intent.
+
+
+Return the rewritten query.
+"""
+
+## Answer Genration and Evaluation with OpenAI for a single text query passeed
+def extract_llm_response_relevance_score(org_query):
     ## Generate answer
+    prompt = QUERY_REWRITE_TEMPLATE.format(query=org_query)
+    query = openai_3_5(prompt)
+    
+    print("Passed query *** :",org_query)
+    print("Rewritten query *** :",query)
+    print("###########")
     answer_llm = rag(query,question_answer_vector_knn, openai_3_5)
+    print(answer_llm)
+    print("********")
     
     ## Evaluate the relevance of generated answer
     prompt = Evaluation_template_quest_answer.format(question=query, answer_llm=answer_llm)
-    response_relevance_llm = openai_3_5(prompt)
+    response_relevance_llm = openai_4o(prompt)
+    print(response_relevance_llm)
+    print("********")
     
     ## Cleanup and format the response from LLM
     cleaned_temp = response_relevance_llm.replace('```', '').replace('\n', '').replace('json', '').rstrip(',').strip()
@@ -255,8 +281,7 @@ def extract_llm_response_relevance_score(query):
     relevance = data.get("Relevance")
     relevance_expl =data.get("Explanation")
     
-    return answer_llm,relevance,relevance_expl
-
+    return query,answer_llm,relevance,relevance_expl
 
 
     

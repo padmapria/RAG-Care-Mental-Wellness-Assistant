@@ -17,4 +17,4 @@ COPY . /app
 EXPOSE 5000
 
 # Run the create_index_elasticsearch.py script first to create index and then start the Flask application
-CMD sh -c "python create_index_elasticsearch.py && python app.py --server.port=5000 --server.address=0.0.0.0"
+CMD sh -c "python create_index_elasticsearch.py && python flask_app.py --server.port=5000 --server.address=0.0.0.0"

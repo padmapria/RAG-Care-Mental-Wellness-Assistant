@@ -1,0 +1,11 @@
+Change Directory to Project Root
+cd D:\z_llm\zoomcamp\RAG-Care-Mental-Wellness-Assistant
+
+Install Required Packages
+pip install -r requirements.txt
+
+Change Directory to Services
+cd services
+
+Run the Test Script: Execute the test script to run your unit and integration tests:
+python app/tests/run_tests.py

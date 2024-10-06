@@ -1,3 +1,4 @@
+#app/flask_app.py
 from flask import Flask, request, jsonify, session
 import time
 import uuid
@@ -48,15 +49,16 @@ def handle_question():
         start_time = time.time()
         
         # Function that retrieves response from openai llm
-        llm_response,relevance,relevance_expl = extract_llm_response_relevance_score(user_question)  
+        question, llm_response,relevance,relevance_expl = extract_llm_response_relevance_score(user_question)  
         processing_time = time.time() - start_time
 
         logger.info(f"Assistant response generated in {processing_time:.2f} seconds for question UUID '{question_uuid}'")
         
         model_used = "openai_4o"
+        question_length_diff = len(user_question) - len(question)
         # Save question and assistant response in the database
         logger.info(f"Saving the conversation (Question ID: {question_uuid}) to the database")
-        save_question(question_uuid, user_question, llm_response, model_used,processing_time, 
+        save_question(question_uuid,question, user_question,question_length_diff, llm_response, model_used,processing_time, 
         relevance, relevance_expl)
         
         logger.info(f"Question and response saved successfully for UUID: {question_uuid}")
@@ -64,7 +66,9 @@ def handle_question():
         # Return the answer in the response
         return jsonify({
             "question_uuid": question_uuid,
-            "question": user_question,
+            "question": question,
+            "user_question": user_question ,
+            "question_length_diff" : question_length_diff,
             "answer": llm_response,
             "relevance" : relevance, 
             "relevance_explanation": relevance_expl,

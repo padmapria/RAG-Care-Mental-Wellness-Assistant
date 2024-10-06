@@ -1,3 +1,5 @@
+#app/db.py
+import os
 import mysql.connector
 from mysql.connector import pooling
 from datetime import datetime  # Import datetime for timestamp handling
@@ -12,16 +14,18 @@ logger = logging.getLogger("db")  # Custom logger name for the Flask app
 # Function to get a SQL connection
 def get_mysql_connection():
     config = {
-        'user': 'root',
-        'password': 'root_pass',
-        'host': 'db',
-        'port': '3306',
-        'database': 'rag_db'
+        'user': os.getenv('DB_USER', 'root'),
+        'password': os.getenv('DB_PASSWORD', 'root_pass'),
+        'host': os.getenv('DB_HOST', 'localhost'),
+        'port': os.getenv('DB_PORT', '3308'),
+        'database': os.getenv('DB_NAME', 'rag_db')
     }
     connection = mysql.connector.connect(**config)
     return connection
 
-def save_question(question_id, question, answer_data, model_used, timetaken, relevance, relevance_expl, timestamp=None):
+def save_question(question_id, question,user_question,
+            question_length_diff, answer_data, model_used, timetaken, 
+relevance, relevance_expl, timestamp=None):
     if timestamp is None:
         timestamp = datetime.now()  # Get current time if none provided
 
@@ -35,6 +39,8 @@ def save_question(question_id, question, answer_data, model_used, timetaken, rel
         data_to_insert = (
             question_id,
             question,
+            user_question,
+            question_length_diff,
             answer_data,
             model_used,
             timetaken,
@@ -49,9 +55,9 @@ def save_question(question_id, question, answer_data, model_used, timetaken, rel
         cursor.execute(
             """
             INSERT INTO requests
-            (id, question, answer, model_used, 
+            (id, question, user_question,question_length_diff, answer, model_used, 
             response_time_in_seconds, relevance, relevance_expl, `timestamp`)
-            VALUES (%s, %s, %s, %s, %s, %s, %s, COALESCE(%s, CURRENT_TIMESTAMP));
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, COALESCE(%s, CURRENT_TIMESTAMP));
             """,
             data_to_insert
         )

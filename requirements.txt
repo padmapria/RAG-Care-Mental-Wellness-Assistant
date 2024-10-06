@@ -8,3 +8,7 @@ pandas
 pyarrow==17.0.0
 sentence_transformers==3.1.1
 elasticsearch
+pytest 
+pytest-flask
+Flask
+mysql-connector

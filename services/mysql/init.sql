@@ -3,6 +3,8 @@ USE rag_db;
 CREATE TABLE requests (
     id VARCHAR(255) NOT NULL,  -- Assuming 'id' is a UUID or some other string identifier
     question TEXT NOT NULL,    -- 'question' is stored as text
+	user_question TEXT NOT NULL, -- 'original question passed' is stored as text
+	question_length_diff INT NOT NULL,  -- Boolean field for rewritten question
     answer TEXT NOT NULL,      -- 'answer' is stored as text
     model_used VARCHAR(100),   -- Assuming 'model_used' is a string, like a model name or version
     response_time_in_seconds FLOAT,       -- 'response_time' in seconds, stored as a float
