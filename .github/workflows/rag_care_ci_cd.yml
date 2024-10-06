@@ -25,7 +25,7 @@ jobs:
 
       - name: Install dependencies
         run: 
-          pip install -r requirements.txt
+          pip install -r services/requirements.txt  # Adjusted path to requirements.txt
 
       # Run tests using run_tests.py
       - name: Run tests
@@ -33,9 +33,14 @@ jobs:
           cd services
           python app/tests/run_tests.py
 
+      # Change directory back to the root before starting Docker services
+      - name: Change directory to root
+        run: cd ..
+
       # Start Docker services using Docker Compose
       - name: Start Docker services
-        run: docker-compose up -d  # Start your services in the background
+        run: |
+          docker-compose up -d  # Start your services in the background
 
       # Check if services are up
       - name: Check services status
@@ -54,8 +59,7 @@ jobs:
             exit 1
           fi
 
-
       # Tear down Docker services after tests
       - name: Tear down Docker services
-        run: docker-compose down
-
+        run: |
+          docker-compose down
