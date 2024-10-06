@@ -88,7 +88,7 @@ The system evaluates retrieval performance using:
  ![RAG Flow](images/RAG_flow.jpg)
 ---
 
-# Section 3: Interface  <br/>
+## Section 3: Interface  <br/>
 ### Containerization
 - The entire system is containerized using **Docker** and managed via **docker-compose** to ensure ease of deployment.
 - The **docker-compose.yml** file is present in the root directory of the project. It defines services for:
@@ -148,7 +148,7 @@ The system evaluates retrieval performance using:
     ![Dashboard](images/grafana.jpg)
 ---
 
-# Section 4: Testing and Cloud Deployment  <br/>
+## Section 4: Testing and Cloud Deployment  <br/>
 - **Testing**: Unit and integration test cases are located in the `/services/app/tests` [tests](https://github.com/padmapria/RAG-Care-Mental-Wellness-Assistant/blob/master/services/app/tests) directory. These tests ensure the functionality and reliability of the application.
 
 #### GitHub Actions Workflow
@@ -210,19 +210,20 @@ This automated CI/CD pipeline enhances the reliability and speed of our developm
 ---
 
 ## Setup Instructions
+**LLM Setup**:  <br/>
 **Note:** OpenAI immediately revokes the API key once it detects that the key has been exposed publicly. Therefore, do not expose your API key.<br/>
-<br/>
 Generate your OpenAI API key here: [Click Here](https://platform.openai.com/account/api-keys)
 
-**Note:** Download and install the LLaMA 3 model (8B) and gemma2:2b from the ollama website: <br/>
+**Note:** Download the LLaMA 3 model (8B) and gemma2:2b from the ollama website and Install the OLLAMA server by following the instructions <br/>
 https://ollama.com/blog/llama3 <br/>
 https://ollama.com/blog/gemma2 <br/>
-Install the OLLAMA server by following the instructions on the above website <br/><br/>
+
 
 <b> Starting the ollama: </b> <br/>
 Start the OLLAMA server by running the command 'ollama serve' in your terminal <br/>
 By default ollama server runs in the port (11434)<br/>
 
+<b> Steps to run the project: </b> <br/>
 1. Clone this git repository from command prompt<br/>
 git clone https://github.com/padmapria/RAG-Care-Mental-Wellness-Assistant.git    
 cd RAG-Care-Mental-Wellness-Assistant  
