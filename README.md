@@ -208,15 +208,20 @@ cd RAG-Care-Mental-Wellness-Assistant
 2. Create a `.env` file inside the 'app' folder and in the notebooks folder store the key as follows:     
 OPENAI_API_KEY=YOUR_API_KEY_HERE<br/>
 
-3. Run **Jupyter Notebook (notebooks folder)** for data ingestion and processing, RAG evaluation
-4. Use `docker-compose up` to start the end to end Flask based RAG application
+3. Use Anaconda to create a conda environment and install the requirements.txt by running the following command to run the Jupyter notebooks in the notebooks folder:
+```
+pip install -r requirements.txt
+```
+ Run **Jupyter Notebook (notebooks folder)** for data ingestion and processing, RAG evaluation
+
+4. Install Docker Desktop and use the below command to start the end-to-end Flask-based RAG application
 ```
 docker compose up -d
 ```
 ---
 
 ### Usage
-1. Access the web application at [http://localhost:5000](http://localhost:5000).
+1. Access the Flask API application at [http://localhost:5000](http://localhost:5000) via Postman.
 2. Input mental wellness-related queries.
 3. Receive personalized guidance and support from trusted mental health resources.
 
