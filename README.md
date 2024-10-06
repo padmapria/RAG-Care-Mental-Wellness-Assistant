@@ -4,16 +4,15 @@
 - [Project Overview](#project-overview)
 - [Problem Description](#problem-description)
 - [Technologies](#technologies)
-- [Dataset](#dataset)
 - [Knowledge Base](#knowledge-base)
 - [Ground Truth Generation and Evaluation](#ground-truth-generation-and-evaluation)
 - [RAG Flow](#rag-flow)
-- [Retrieval Evaluation](#retrieval-evaluation)
-- [Evaluation Metrics](#evaluation-metrics)
-- [Interface](#interface)
 - [Ingestion Pipeline](#ingestion-pipeline)
-- [Monitoring](#monitoring)
+- [Retrieval Evaluation](#retrieval-evaluation)
+- [RAG Evaluation](#rag-evaluation)
 - [Containerization](#containerization)
+- [FlaskAPI](#flaskapi)
+- [Monitoring](#monitoring)
 - [Reproducibility](#reproducibility)
 - [Setup Instructions](#setup-instructions)
 - [Usage](#usage)
@@ -65,7 +64,7 @@ Integrates the Counsel Chat Dataset knowledge base and **LLaMA3:8b, OpenAI API, 
 ## Ingestion Pipeline
 - Semi-automated ingestion pipeline via **Jupyter Notebook (step0)** for data ingestion and preparation
 
-## Indexing and Stroing the data
+## Indexing and Storing the data
  **VectorStore**: The project integrates **Elasticsearch** to index and retrieve mental health-related data, enabling efficient vector similarity searches for question-answer pairs.
  
 ## Retrieval Evaluation
@@ -78,22 +77,35 @@ The system evaluates retrieval performance using:
 - **Hit Rate**: Measures the proportion of relevant documents retrieved.
 - **Mean Reciprocal Rank (MRR)**: Assesses the ranking quality of retrieved documents.
 
-## RAG Flow Evaluation
+## RAG Evaluation
 - The RAG flow is evaluated using **Gemma2** and **OpenAI** as LLM judges for:
 - Relvevence of LLM generated answer against true answer
 - Relvevence of LLM generated answer against the question
 
-## Query Rewriting
+## User query rewriting 
 - The user queries are rewritten with openAI 3.5 turbo API
 ---
 
-# Section 3: RAG Flow and Evaluation  <br/>
+# Section 3: Interface  <br/>
+## Containerization
+- The entire system is containerized using **Docker** and managed via **docker-compose** to ensure ease of deployment.
+- The docker compose file is present in the root directory of the project
+---
 (present in the folder /services/app)  <br/>
-
-## Interface
-- A web-based application built with **Flask**, where users can input queries related to mental wellness and receive responses derived from trusted resources.
+## FlaskAPI
+- A web application built with **Flask**,
+- The application provides the following functionalities:
+  - Query Processing: Accepts user queries and rewrites them to optimize search results.
+  - Vector Store Search: Searches the vector store to retrieve relevant answers.
+  - LLM Integration: Utilizes two Large Language Models (LLMs):
+  - Generator LLM: Retrieves answers from the vector store.
+  - Evaluator LLM: Calculates the effectiveness of the retrieved answer and provides relevance explanations using OpenAI LLM.
 ```
-http://localhost:5000
+http://localhost:5000/ask
+```
+  - Feedback Processing: Accepts feedback for every query
+```
+http://localhost:5000/feedback
 ```
 ---
 
@@ -112,14 +124,8 @@ http://localhost:3000
 ```
 ---
 
-## Containerization
-- The entire system is containerized using **Docker** and managed via **docker-compose** to ensure ease of deployment.
-
----
-
 ## Reproducibility
 - The project ensures reproducibility with clear setup instructions and an accessible dataset.
-
 ---
 
 ## Setup Instructions
