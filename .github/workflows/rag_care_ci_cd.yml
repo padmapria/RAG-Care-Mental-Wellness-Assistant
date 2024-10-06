@@ -24,8 +24,7 @@ jobs:
           python-version: '3.8'  # Specify your Python version here
 
       - name: Install dependencies
-        run: |
-          cd services
+        run: 
           pip install -r requirements.txt
 
       # Run tests using run_tests.py
