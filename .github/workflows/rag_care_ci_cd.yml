@@ -17,16 +17,43 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      # Set up Python environment and install dependencies
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'  # Specify your Python version here
+
+      - name: Install dependencies
+        run: |
+          cd services
+          pip install -r app/requirements.txt
+
       # Start Docker services using Docker Compose
       - name: Start Docker services
         run: docker-compose up -d  # Start your services in the background
 
-      - name: Run Unit Tests
-        run: docker-compose exec python-app pytest app/tests/unit_tests --cov=app
+      # Check if services are up
+      - name: Check services status
+        run: |
+          echo "Waiting for services to be up..."
+          for i in {1..10}; do
+            if [[ $(docker-compose ps | grep 'Up') ]]; then
+              echo "Services are up!"
+              break
+            fi
+            echo "Services are not ready yet. Waiting..."
+            sleep 5
+          done
+          if [[ ! $(docker-compose ps | grep 'Up') ]]; then
+            echo "Services did not start in time."
+            exit 1
+          fi
 
-      # Run integration tests
-      - name: Run Integration Tests
-        run: docker-compose exec python-app pytest app/tests/integration_tests/
+      # Run tests using run_tests.py
+      - name: Run tests
+        run: |
+          cd services
+          python app/tests/run_tests.py
 
       # Tear down Docker services after tests
       - name: Tear down Docker services
