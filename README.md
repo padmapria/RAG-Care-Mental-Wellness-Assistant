@@ -13,9 +13,9 @@
 - [Containerization](#containerization)
 - [FlaskAPI](#flaskapi)
 - [User Data Collection and Monitoring](#user-data-collection-and-monitoring)
+- [CICD Pipeline](#cicd-pipeline)
 - [Setup Instructions](#setup-instructions)
 - [Usage](#usage)
-- [CICD Pipeline](#cicd-pipeline)
 
 ### Project Overview
 The **RAG-Care-Mental-Wellness-Assistant** project aims to develop a conversational AI system that provides accessible mental wellness support. By leveraging Retrieval-Augmented Generation (RAG) technology, the assistant allows users to interact with trusted mental health resources effectively.
