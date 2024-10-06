@@ -116,10 +116,16 @@ The system evaluates retrieval performance using:
     - **Generator LLM**: Retrieves answers from the vector store.
     - **Evaluator LLM**: Calculates the effectiveness of the retrieved answer and provides relevance explanations using OpenAI LLM.
       - Endpoint: `http://localhost:5000/ask`
+         <br/>
+        ![ask](images/ask.jpg)
   - **Feedback Processing**: Accepts feedback for every query.
       - Endpoint: `http://localhost:5000/feedback`
+         <br/>
+        ![feedback](images/feedback.jpg)
   - **Listing Recent Questions**: Shows the last 5 questions from the user.
       - Endpoint: `http://localhost:5000/recent_questions`
+         <br/>
+    ![recent_questions](images/recent_questions.jpg)
 ---
 
 ### User Data Collection and Monitoring
@@ -134,6 +140,8 @@ The system evaluates retrieval performance using:
 - The application also integrates **Grafana**, a monitoring and visualization tool. Grafana allows users to track performance metrics of the RAG model and the underlying infrastructure, ensuring that the application operates efficiently.
   - Grafana dashboard can be accessed from:
     - `http://localhost:3000`
+       <br/>
+    ![Dashboard](images/grafana.jpg)
 ---
 
 # Section 4: Testing and Cloud Deployment  <br/>
@@ -147,6 +155,7 @@ The following GitHub Actions workflow is defined in the `.github/workflows/ci-cd
 
 Our project utilizes a robust CI/CD pipeline to ensure continuous integration and deployment. This process is managed using **GitHub Actions** and is triggered by every push to the `master` branch as well as pull requests targeting the `master` branch.
 
+![CI/CD](images/cicd.jpg)
 ##### Steps
 
 1. **Triggering the Pipeline**: 
@@ -193,7 +202,7 @@ Our project utilizes a robust CI/CD pipeline to ensure continuous integration an
 
 This automated CI/CD pipeline enhances the reliability and speed of our development process by continuously integrating and deploying code changes.
 
-
+![CI/CD](images/cicd_complete.jpg)
 ---
 
 ## Setup Instructions
