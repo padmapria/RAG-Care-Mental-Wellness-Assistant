@@ -457,7 +457,118 @@
       ],
       "title": "Relavence Summary",
       "type": "piechart"
+    },
+	{
+  "datasource": {
+    "default": true,
+    "type": "grafana-mysql-datasource",
+    "uid": "cdzqj0gkl10xsf"
+  },
+  "fieldConfig": {
+    "defaults": {
+      "custom": {
+        "align": "auto",
+        "cellOptions": {
+          "type": "auto"
+        },
+        "inspect": false
+      },
+      "mappings": [],
+      "thresholds": {
+        "mode": "absolute",
+        "steps": [
+          {
+            "color": "green",
+            "value": null
+          },
+          {
+            "color": "red",
+            "value": 80
+          }
+        ]
+      }
+    },
+    "overrides": [
+      {
+        "matcher": {
+          "id": "byName",
+          "options": "id"
+        },
+        "properties": [
+          {
+            "id": "custom.width",
+            "value": 200
+          }
+        ]
+      },
+      {
+        "matcher": {
+          "id": "byName",
+          "options": "question_length_diff"
+        },
+        "properties": [
+          {
+            "id": "custom.width",
+            "value": 150
+          }
+        ]
+      }
+    ]
+  },
+  "gridPos": {
+    "h": 8,
+    "w": 12,
+    "x": 12,
+    "y": 15
+  },
+  "id": 7,
+  "options": {
+    "cellHeight": "sm",
+    "footer": {
+      "countRows": false,
+      "fields": "",
+      "reducer": [
+        "sum"
+      ],
+      "show": false
+    },
+    "showHeader": true,
+    "sortBy": []
+  },
+  "pluginVersion": "11.2.0",
+  "targets": [
+    {
+      "datasource": {
+        "type": "grafana-mysql-datasource",
+        "uid": "cdzqj0gkl10xsf"
+      },
+      "editorMode": "code",
+      "format": "table",
+      "rawQuery": true,
+      "rawSql": "SELECT id, question_length_diff FROM requests ORDER BY timestamp DESC LIMIT 5",
+      "refId": "A",
+      "sql": {
+        "columns": [
+          {
+            "parameters": [],
+            "type": "function"
+          }
+        ],
+        "groupBy": [
+          {
+            "property": {
+              "type": "string"
+            },
+            "type": "groupBy"
+          }
+        ],
+        "limit": 50
+      }
     }
+  ],
+  "title": "Question ID and Length",
+  "type": "table"
+}
   ],
   "refresh": false,
   "schemaVersion": 39,
