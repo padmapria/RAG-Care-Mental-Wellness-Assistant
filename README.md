@@ -131,18 +131,18 @@ The system evaluates retrieval performance using:
     - `http://localhost:3000`
 ---
 
-### CICD Pipeline
+# Section 4: Testing and Cloud Deployment  <br/>
 - **Testing**: Unit and integration test cases are located in the `/services/app/tests` directory. These tests ensure the functionality and reliability of the application.
 
 #### GitHub Actions Workflow
-The following GitHub Actions workflow is defined in the `.github/workflows/ci-cd.yml` file:
+The following GitHub Actions workflow is defined in the `.github/workflows/ci-cd.yml` file: [GitHub Actions Workflow: CI/CD Pipeline](https://github.com/padmapria/RAG-Care-Mental-Wellness-Assistant/blob/master/.github/workflows/rag_care_ci_cd.yml)
 - Every GitHub push triggers the CI/CD pipeline.
 
-#### CI/CD Pipeline Overview
+### CICD Pipeline
 
 Our project utilizes a robust CI/CD pipeline to ensure continuous integration and deployment. This process is managed using **GitHub Actions** and is triggered by every push to the `master` branch as well as pull requests targeting the `master` branch.
 
-##### Pipeline Steps
+##### Steps
 
 1. **Triggering the Pipeline**: 
    - The CI/CD pipeline is initiated on every push or pull request to the `master` branch to ensure that all changes are validated before merging.
@@ -191,7 +191,7 @@ This automated CI/CD pipeline enhances the reliability and speed of our developm
 
 ---
 
-### Setup Instructions
+## Setup Instructions
 **Note:** OpenAI immediately revokes the API key once it detects that the key has been exposed publicly. Therefore, do not expose your API key.<br/>
 <br/>
 Generate your OpenAI API key here: [Click Here](https://platform.openai.com/account/api-keys)
