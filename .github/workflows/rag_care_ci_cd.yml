@@ -69,22 +69,3 @@ jobs:
         run: |
           docker compose down
 
-      # Log in to AWS ECR
-      - name: Log in to Amazon ECR
-        run: |
-          aws ecr get-login-password --region ${{ secrets.AWS_REGION }} | docker login --username AWS --password-stdin ${{ secrets.AWS_ECR_REGISTRY }}
-
-      # Build the Docker image
-      - name: Build Docker image
-        run: docker build -t my-app:latest .
-
-      # Tag and push the Docker image to ECR
-      - name: Push Docker image to ECR
-        run: |
-          docker tag my-app:latest ${{ secrets.AWS_ECR_REGISTRY }}/my-app:latest
-          docker push ${{ secrets.AWS_ECR_REGISTRY }}/my-app:latest
-
-      # Deploy to AWS ECS
-      - name: Deploy to AWS ECS
-        run: |
-          aws ecs update-service --cluster my-cluster --service my-service --force-new-deploymen
