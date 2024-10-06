@@ -27,7 +27,7 @@ Traditional methods of retrieving mental health information can be time-consumin
 - **Python**: Core programming language.
 - **Hugging Face Transformers**: For language model integration.
 - **LLaMA Models (LLaMA3:8b & Gemma2:2b)**: For ground truth query generation and evaluation.
-- **LLaMA Models (Gemma2 & OpenAI3.5 and OpenAI4o)**: For RAG Flow evaluation and 
+- **LLaMA Models (Gemma2 & OpenAI3.5 and OpenAI4o)**: For RAG Flow evaluation and response generation in Flask
 - **Pydantic**: Data modeling and validation.
 - **Pandas**: Data manipulation and analysis.
 -  **ElasticSearch**: Vectorstore
