@@ -40,7 +40,7 @@ jobs:
       # Start Docker services using Docker Compose
       - name: Start Docker services
         run: |
-          docker-compose up -d  # Start your services in the background
+          docker compose up -d  # Start your services in the background
 
       # Check if services are up
       - name: Check services status
@@ -62,4 +62,4 @@ jobs:
       # Tear down Docker services after tests
       - name: Tear down Docker services
         run: |
-          docker-compose down
+          docker compose down
