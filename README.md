@@ -251,26 +251,41 @@ By default ollama server runs in the port (11434)<br/>
 git clone https://github.com/padmapria/RAG-Care-Mental-Wellness-Assistant.git    
 cd RAG-Care-Mental-Wellness-Assistant  
 
-2. Create a `.env` file inside the 'app' folder and in the notebooks folder store the key as follows:     
+2. Create a `.env` file and  Store the key as follows, in both the 'app' folder and in the notebooks folder.     
 OPENAI_API_KEY=YOUR_API_KEY_HERE<br/>
 
-3. Use Anaconda to create a conda environment and install the requirements.txt by running the following command to run the Jupyter notebooks in the notebooks folder:
+3. Use Anaconda to create a conda environment and install the requirements.txt by running the following command
 ```
 pip install -r requirements.txt
 ```
- Run **Jupyter Notebook (notebooks folder)** for data ingestion and processing, RAG evaluation
+4. Run **Jupyter Notebook (notebooks folder)** for data ingestion and processing, RAG evaluation
 
-4. Install Docker Desktop and use the below command to start the end-to-end Flask-based RAG application
+5. Install Docker Desktop and use the below command to start the end-to-end Flask-based RAG application
 ```
 docker compose up -d
 ```
----
-
+6. Verify the status of docker container, Check if the container is up and running
+   ![docker](images/docker_containers.jpg)
+   
 ### Usage
-1. Access the Flask API application at [http://localhost:5000](http://localhost:5000) via Postman.
+1.Accessing the Flask API Application
+ -  Open Postman and navigate to [http://localhost:5000](http://localhost:5000)
 2. Input mental wellness-related queries.
 3. Receive personalized guidance and support from trusted mental health resources.
-
+   - Sample JSON for testing: [Sample Json to test Flask App](https://github.com/padmapria/RAG-Care-Mental-Wellness-Assistant/blob/master/RAG_Mental_wellness_RestAPI_sample.postman_collection.json)
+4.  Monitoring with Grafana <br/>
+    Access the Grafana dashboard via browser from: <br/>
+    - `http://localhost:3000`
+    - Username: admin
+    - Password: admin
+5. Database Access <br/>
+    MySQL Access can be accessed via MySQLWorkbench or dbeaver with the following credentials <br/>
+    - db: rag_db
+    - host: localhost
+    - port :3306
+    - Username: root
+    - Password: root_pass
+      
 ---
 ### Potential Enhancements
 - Standardized Prompts: Standardize prompts in the workflow to enhance consistency and clarity. (sometimes llama3 gives json output for some inputs)
