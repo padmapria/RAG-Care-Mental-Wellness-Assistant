@@ -74,10 +74,11 @@ jobs:
         run: |
           aws ecr get-login-password --region ${{ secrets.AWS_REGION }} | docker login --username AWS --password-stdin ${{ secrets.AWS_ECR_REGISTRY }}
 
-      # Build the Docker image
-      - name: Build Docker image
-        run: docker build -t my-app:latest .
-
+      # Build Docker image with Docker Compose
+      - name: Build Docker image with Docker Compose
+        run: |
+          docker compose build  # Build the images defined in docker-compose.yml
+          
       # Tag and push the Docker image to ECR
       - name: Push Docker image to ECR
         run: |
