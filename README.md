@@ -23,10 +23,10 @@
 Traditional methods of retrieving mental health information can be time-consuming and inefficient. This project tackles the complexity of navigating mental health resources, ensuring swift, tailored, and reliable responses to users' queries.
 
 ## Solution Overview
-The **RAG-Care-Mental-Wellness-Assistant** project develops a conversational AI system providing accessible mental wellness support, focusing on depression-related issues. Leveraging Retrieval-Augmented Generation (RAG) technology and powered by Large Language Models (LLMs), specifically LLaMA3:8b Gemma2:2b,OpenAI3.5 Turbo and OpenAI4o this assistant enables users to interact with trusted mental health resources effectively.
+The **RAG-Care-Mental-Wellness-Assistant** project develops a conversational AI system providing accessible mental wellness support, focusing on depression-related issues. Leveraging Retrieval-Augmented Generation (RAG) technology and powered by Large Language Models (LLMs), specifically LLaMA3:8b Gemma2:2b,OpenAI3.5 Turbo and OpenAI4o this assistant enables users to interact with trusted mental health resources effectively, while capturing user feedback for continuous improvement.
 
-![image](https://deepgram.com/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F96965%2F1698862153-image4.png&w=1200&q=75) <br/>
-<Imagecredits :deepgram.com>
+![image](https://deepgram.com/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F96965%2F1698862153-image4.png&w=1200&q=75) 
+Imagecredits :deepgram.com
 
 <h5> Goals </h5>
 - Provide Conversational interface mental wellness support by integrating with trusted mental health resources<br/>
@@ -278,4 +278,5 @@ docker compose up -d
 
 ### Acknowledgement
 - I acknowledge the developers of OpenAI API, LLaMA3 (Meta AI) and Gemma2(Google) for providing access to their LLM models and APIs.
+
 ---
