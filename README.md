@@ -241,7 +241,6 @@ Generate your OpenAI API key here: [Click Here](https://platform.openai.com/acco
 https://ollama.com/blog/llama3 <br/>
 https://ollama.com/blog/gemma2 <br/>
 
-
 <b> Starting the ollama: </b> <br/>
 Start the OLLAMA server by running the command 'ollama serve' in your terminal <br/>
 By default ollama server runs in the port (11434)<br/>
@@ -279,7 +278,7 @@ docker compose up -d
     - Username: admin
     - Password: admin
 5. Database Access <br/>
-    MySQL Access can be accessed via MySQLWorkbench or dbeaver with the following credentials <br/>
+     MySQLDB can be accessed via MySQLWorkbench or dbeaver with the following credentials <br/>
     - db: rag_db
     - host: localhost
     - port :3306
@@ -295,6 +294,8 @@ docker compose up -d
 ---
 
 ### Acknowledgement
-- I acknowledge the developers of OpenAI API, LLaMA3 (Meta AI) and Gemma2(Google) for providing access to their LLM models and APIs.
+I would like to extend my gratitude to the following individuals and organizations for their valuable resources and contributions:
+- Alexey Grigorev's expertise and community resources for informative guidance. https://alexeygrigorev.com/
+- OpenAI, Meta AI, and Google for providing access to their LLM models and APIs (OpenAI API, LLaMA3, and Gemma2)..
 
 ---
