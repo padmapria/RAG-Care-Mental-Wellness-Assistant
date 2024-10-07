@@ -225,6 +225,7 @@ Our project utilizes a robust CI/CD pipeline to ensure continuous integration an
     - Finally, the updated application is deployed to AWS Elastic Container Service (ECS), ensuring the latest version is running in the cloud.
 
 This automated CI/CD pipeline enhances the reliability and speed of our development process by continuously integrating and deploying code changes.
+Note: Continuous Deployment (CD) Testing Pending: Conduct thorough testing of the CD section in the GitHub workflow to ensure reliable performance.
 
 ![CI/CD](images/cicd_complete.jpg)
 ---
