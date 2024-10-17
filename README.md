@@ -71,7 +71,7 @@ Imagecredits :deepgram.com
 [RAG Test Notebook: Step 1](https://github.com/padmapria/RAG-Care-Mental-Wellness-Assistant/blob/master/notebooks/step1_rag_test.ipynb)
 
 **RAG Pipeline** <br/>
-![RAG Flow](images/rag_pipeline.jpg)
+<img src="images//rag_pipeline.jpg" alt="pipeline" width="70%" height="70%"> <br/>
 Imagecredits :https://medium.com/@drjulija/what-is-retrieval-augmented-generation-rag-938e4f6e03d1
 
 ### Ingestion Pipeline
@@ -108,7 +108,7 @@ This project employs advanced query rewriting capabilities with OpenAI 3.5 Turbo
 ### RAG Evaluation
 - The RAG flow is evaluated using **Gemma2** and **OpenAI4o** as LLM judges for:
 
-<img src="images/rag_evaluation.jpg" width="50%" height="50%">
+<img src="images/rag_evaluation.jpg" alt="Evaluation" width="50%" height="50%">
 
 Imagecredits :(https://cobusgreyling.medium.com/steps-in-evaluating-retrieval-augmented-generation-rag-pipelines-7d4b393e62b3) <br/>
 - Evaluation criteria:
