@@ -70,17 +70,16 @@ Imagecredits :deepgram.com
 (Notebook in the folder `/notebooks/step1_data_preparation.ipynb`) <br/>
 [RAG Test Notebook: Step 1](https://github.com/padmapria/RAG-Care-Mental-Wellness-Assistant/blob/master/notebooks/step1_rag_test.ipynb)
 
-**RAG Pipeline** <br/>
-<img src="images//rag_pipeline.jpg" alt="pipeline" width="70%" height="70%"> <br/>
-Imagecredits :https://medium.com/@drjulija/what-is-retrieval-augmented-generation-rag-938e4f6e03d1
-
 ### Ingestion Pipeline
 - Integrates the Counsel Chat Dataset knowledge base and **LLaMA3:8b, OpenAI API, Gemma2:2b models** LLM models
 - Utilizes a semi-automated Jupyter Notebook **Jupyter Notebook (step0)** for data ingestion and preparation.
 
 ### Indexing and Storing the data
  **VectorStore**: The project employs **Elasticsearch** as a VectorStore, indexing mental health data for rapid question-answer pair retrieval via vector similarity searches.
- 
+
+<img src="images//rag_pipeline.jpg" alt="pipeline" width="70%" height="70%"> <br/>
+Imagecredits :https://medium.com/@drjulija/what-is-retrieval-augmented-generation-rag-938e4f6e03d1
+
 ### Retrieval Evaluation
 The system evaluates retrieval performance using:
 - Text Search: `minsearch_search` 
@@ -111,9 +110,9 @@ This project employs advanced query rewriting capabilities with OpenAI 3.5 Turbo
 <img src="images/rag_evaluation.jpg" alt="Evaluation" width="50%" height="50%">
 
 Imagecredits :(https://cobusgreyling.medium.com/steps-in-evaluating-retrieval-augmented-generation-rag-pipelines-7d4b393e62b3) <br/>
-- Evaluation criteria:
-    - Relvevence of LLM generated answer against true answer
-    - Relvevence of LLM generated answer against the question
+- Evaluation criteria: 
+    - Ground Truth Relevance: Measure how well the RAG LLM generated answer aligns with the ground truth answer.
+    - Question Relevance: Assess how accurately the RAG LLM generated answer addresses the original question.<br/>
  ![RAG Flow](images/RAG_flow.jpg)
 ---
 
