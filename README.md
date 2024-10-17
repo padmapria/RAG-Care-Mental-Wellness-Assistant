@@ -70,9 +70,12 @@ Imagecredits :deepgram.com
 (Notebook in the folder `/notebooks/step1_data_preparation.ipynb`) <br/>
 [RAG Test Notebook: Step 1](https://github.com/padmapria/RAG-Care-Mental-Wellness-Assistant/blob/master/notebooks/step1_rag_test.ipynb)
 
-Integrates the Counsel Chat Dataset knowledge base and **LLaMA3:8b, OpenAI API, Gemma2:2b models** LLM models
+**RAG Pipeline** <br/>
+![RAG Flow](images/rag_pipeline.jpg)
+Imagecredits :https://medium.com/@drjulija/what-is-retrieval-augmented-generation-rag-938e4f6e03d1
 
 ### Ingestion Pipeline
+- Integrates the Counsel Chat Dataset knowledge base and **LLaMA3:8b, OpenAI API, Gemma2:2b models** LLM models
 - Utilizes a semi-automated Jupyter Notebook **Jupyter Notebook (step0)** for data ingestion and preparation.
 
 ### Indexing and Storing the data
@@ -103,7 +106,9 @@ This project employs advanced query rewriting capabilities with OpenAI 3.5 Turbo
 - Increased relevance of mental health resources<br/>
   
 ### RAG Evaluation
-- The RAG flow is evaluated using **Gemma2** and **OpenAI** as LLM judges for:
+- The RAG flow is evaluated using **Gemma2** and **OpenAI4o** as LLM judges for:
+![Evaluation](images/rag_evaluation.jpg)
+Imagecredits :(https://cobusgreyling.medium.com/steps-in-evaluating-retrieval-augmented-generation-rag-pipelines-7d4b393e62b3) <br/>
 - Evaluation criteria:
     - Relvevence of LLM generated answer against true answer
     - Relvevence of LLM generated answer against the question
