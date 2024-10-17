@@ -107,7 +107,9 @@ This project employs advanced query rewriting capabilities with OpenAI 3.5 Turbo
   
 ### RAG Evaluation
 - The RAG flow is evaluated using **Gemma2** and **OpenAI4o** as LLM judges for:
-![Evaluation](images/rag_evaluation.jpg)
+
+<img src="images/rag_evaluation.jpg" width="50%" height="50%">
+
 Imagecredits :(https://cobusgreyling.medium.com/steps-in-evaluating-retrieval-augmented-generation-rag-pipelines-7d4b393e62b3) <br/>
 - Evaluation criteria:
     - Relvevence of LLM generated answer against true answer
